@@ -45,6 +45,8 @@ git checkout nombre_de_tu_rama_aqui
 
 Desde ahi empezaran a desarrollar su tarea.
 
+https://ugeek.github.io/blog/post/2019-01-28-crear-ramas-con-git.html  si quieen saber mas de las ramas dejo este link
+
 4. utilizando el comando git status pueden ver que archivos son los que git aun no sigue, cuando agregen algo a sus archivos en su rama tienen que hacer que git les haga seguimiento, para eso se utiliza el comando
 
 git add . 
