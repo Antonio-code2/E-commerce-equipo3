@@ -72,6 +72,9 @@ input{
     content: "\f007";
     font-size: 15px;
 }
+input:focus{
+    outline-color: #428CB5;
+}
 
 
 /* estilos boton de login */
