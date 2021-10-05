@@ -1,0 +1,74 @@
+footer {
+    background: #8099eb;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+header {
+    background: rgb(240, 224, 12);
+    color: rgb(240, 224, 12);
+    display: grid;
+}
+* {
+    margin:0;
+    padding:0;
+    font:12pt Poppines;
+}
+header .encabezado {
+    background: rgb(240, 224, 12);
+    color: rgb(10, 10, 10);
+    display: grid;
+}
+header .IncioyRegistro {
+    background: rgb(240, 224, 12);
+    color: rgb(10, 10, 10);
+    position:absolute; top: 50px; left: 1500px;
+
+}
+header .encabezado .presentacion .logo img {
+    width: 150px;
+    background-color: transparent;
+}
+
+body {
+    background-color:#e5e9ec;
+  }
+  
+
+
+
+.field {
+  display:flex;
+  position:absolute; top: -30px; left: 600px;
+  margin:3.5em auto;
+  width:30%;
+  flex-direction:row;
+  box-shadow:
+   1px 1px 0 rgb(25, 112, 211),
+
+}
+
+.field>input[type=text],
+.field>button {
+  display:block;
+  font:1.2em 'Montserrat Alternates';
+}
+
+.field>input[type=text] {
+  flex:1;
+  padding:0.2em;
+  border:0.2em solid rgb(55, 24, 230);
+}
+
+.field>button {
+  padding:0.6em 0.8em;
+  background-color:rgb(55, 24, 230);
+  color:white;
+  border:none;
+}
+
+
+
+
+
