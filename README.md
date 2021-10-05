@@ -62,3 +62,10 @@ despues de esto pueden seguir trabajando y cada ves que tengan un cambio que ya 
 
  si tengo errores ortograficos me disculpas naty ;) <3
 
+
+ MAS COMANDOS UTILICES PARA GIT
+
+ -<git branch -a> nos muestra tanto las ramas locales como las remotas
+ -<git checkout rama>  este comando nos movera a la rama que queramos
+ -<git pull> tambien sirve para traer las ramas nuevas que estan en el repositorio remoto, solo debes ubicarte en la rama main o master y digitar el comando
+
