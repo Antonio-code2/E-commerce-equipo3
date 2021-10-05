@@ -48,7 +48,7 @@ body{
 }
 
 .logo img{
-    width: 100px;
+    width: 150px;
 }
 
 
@@ -95,7 +95,7 @@ input{
 
 .form_link{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .form_link .link_text{
     color: #428CB5;
