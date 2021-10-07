@@ -1,0 +1,153 @@
+ /*cambio de tamaño de carro y usuario*/
+nav img {
+    height: 30px;
+}
+/*separación de iconos en la página*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F5EA7E;
+    height: 100px;
+}
+
+.padre {
+    display: flex;
+}
+/*características de categorías*/
+.categories {
+    width: 20%;
+    background-color: #A1D9E0;
+}
+/*ocupación de productos en body*/
+.products {
+    width: 90%;
+}
+
+.card-body img {
+    width: 30px;
+}
+
+/*cajones de cada producto*/
+.card {
+    
+
+
+    width: 25%;
+    display: block;
+    float: left;
+    background-color:#DCD8B3;
+    border-radius: 16px;
+}
+.ImagenProducto {
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    margin-left: auto; 
+    margin-right: auto;
+    vertical-align: top;
+
+
+}
+
+.ImagenProducto img {
+    height: 290px;
+    left: 210px;
+    
+}
+
+/*modifica el tamaño de todas las imágenes*/
+img.card-img-top {
+    overflow: hidden;
+    width: 70%;
+    height: 200px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* CARACTERÍSTICAS DEL FOOTER*/
+footer {   /* CAJÓN INFERIOR*/
+    display: flex;
+    justify-content: space-around;
+    background-color: #428CB5;
+    height:150px;
+}
+/* TITULO POLITICS*/
+div#politics {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+div#contact {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+
+div#questions {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+/* TEXTOS DEBAJO DE TÍTULOS*/
+div { 
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 5px;
+    color: #FFFFFF;
+}
+
+div#redes {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 13px;
+    line-height: 5px;
+    color: #FFFFFF;
+}
+
+.fa{
+    color: black;
+}
+
+a.cateProductos {
+    color: #8E8686;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+
+}
+h5.card-title.text-center {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #232323;
+}
+
+.card-title {
+    margin-bottom: .75rem;
+    color: black;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+    color: black;
+}
