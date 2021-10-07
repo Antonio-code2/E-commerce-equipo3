@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETALLE DEL PRODUCTO</title>
     <link rel="stylesheet" href="css/VistaUSuario.css">
-    > <!--ruta de la carpeta estilos-->
+     <!--ruta de la carpeta estilos-->
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -14,7 +14,7 @@
         <div class="encabezado">
             <div class="presentacion">
                 <div class="logo">
-                    <img src="imgDetalleP/logo.png" alt="Logo"width= 330px height=150px>
+                    <img src="imgDetalleP/logo.png" alt="Logo"width= 230px height=100px>
                 </div>
                 <div class="field" id="formulariodebusqueda">
                     <input type="text" id="searchterm" placeholder="¿Que Producto estas buscando?">
@@ -43,9 +43,10 @@
                             <img src="imgDetalleP/corazon.png" alt="corazon"width= 50px height=50px align="right" top= "border"> 
                             <h1>$200.000</h1>
                             <br clear="all">
-                            <img src="imgDetalleP/carritoentrega.png" alt="entrega"width= 40px height=40px align="left" >
+                            <img src="imgDetalleP/carritoentrega.png" alt="entrega"width= 40px height=40px align=left >
                             <h2>Envio Gratis!!</h2>
-                            <h6>Calificar Producto</h6>
+                            <nav>
+                            <a href="#"><h6>Calificar Producto</h6></a></nav>
                             <img src="imgDetalleP/estrellas.png" alt="estrella" width= 210px height=30px >
                             <h3>Color: Negro</h3>
                             <h3>Stock: Disponible</h3>
@@ -53,7 +54,6 @@
                             <h6>Ver Metodos De Pago</h6>
                             <img src="imgDetalleP/mediosdepago.png" alt="mediosdepago"width= 250px height=50px >
                         </div>
-
                 </article>
                         <div>
                         <input type="submit" value="Comprar" id="comprar">
@@ -64,9 +64,19 @@
         </section>
         <article>
             <div class="imagenproducto">
-            <img src="imgDetalleP/audifono.png" alt="producto"width= 600px height=500px ></div>
+            <img src="imgDetalleP/audifono.png" alt="producto"width= 460px height=350px ></div>
         </article>
-           <article>
+        <article>
+            <div class="imagendetallada">
+            <img src="imgDetalleP/imgdetalle.png" alt="producto"width= 100px ></div>
+            <div class="imagendetallada2">
+                <img src="imgDetalleP/imgdetalle.png" alt="producto"width= 100px ></div>
+                <div class="imagendetallada3">
+                    <img src="imgDetalleP/imgdetalle.png" alt="producto"width= 100px ></div>
+                    <div class="imagendetallada4">
+                    <img src="imgDetalleP/imgdetalle.png" alt="producto"width= 100px ></div>
+        </article>  
+        <article>
             <div class="DescripcionProducto">
                 <h1> Descripcion del Producto</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
@@ -135,12 +145,13 @@
                         <label for="comentario"></label>
                         <input type="text" name="comentario" id="comentario"placeholder="Añade un Comentario" >
                     </div>
-                    <h6>Politicas de Moderacion</h6>
+                   <div>
+                    <h6>Politicas de Moderacion</h6></div>
                 </div>
-                <div align="right">  
-                    <button type="submit" id="Publicar" class="PublicarComentario">Publicar</button>
-                    </div>
             </form>
+            <div align=right>  
+                <button type="submit" id="Publicar" class="PublicarComentario">Publicar</button>
+                </div>
             <div align="center">                    
                 <button type="submit" id="Ver Comentarios" class="Comentario">
                    Ver Comentarios</button>
