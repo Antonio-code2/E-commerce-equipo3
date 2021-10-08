@@ -19,8 +19,8 @@ header .encabezado {
 }
 
 .InicioyRegistro {
-  width:90%; /* Establecemos que el ancho sera del 90% */
-	max-width:950px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+  width:100%; /* Establecemos que el ancho sera del 90% */
+	max-width:650px; /* Aqui le decimos que el ancho máximo sera de 1000px */
 	margin:auto; /* Centramos los elementos */
 	overflow:hidden; /* Eliminamos errores de float */
 }
@@ -33,7 +33,7 @@ header .encabezado .presentacion .logo img {
 header .carrito img {
   position: absolute;
   width: 25px;
-  left: 90.57%;
+  left: 88.57%;
   right: 4.83%;
   top: 6.7%;
   bottom: 72.02%;
@@ -52,7 +52,7 @@ header .avatar img {
 
 header nav {
 	float:right;
-	line-height:90px;
+	line-height:100px;
 }
 
 header nav a {
@@ -68,10 +68,9 @@ header nav a {
 	transition:all 500ms ease;
 }
 
-
 .field {
   display:flex;
-  position:absolute; top: -0px; left: 600px;
+  position:absolute; top: -30px; left: 400px;
   margin:3.5em auto;
   width:30%;
   flex-direction:row;
@@ -83,7 +82,7 @@ header nav a {
 .field>button {
   display:block;
   font-size: 25px;
-  font:1.2em 'Montserrat Alternates';
+  font:1.2em 'sans-serif';
 }
 
 .field>input[type=text] {
@@ -113,10 +112,10 @@ body {
   }
 
  .descripcionbreve {
-   display: block;
+  display: block;
   background: #DCD8B3;
   width: 100%;
-  height: 483px;
+  height: 493px;
   margin-bottom:30px;
 }
 .descripcionbreve .contenido{
@@ -177,6 +176,7 @@ section .img{
 
 .btn-container{
   width: 100%;
+  font-family: sans-serif;
 }
 
 .producto{
@@ -191,6 +191,17 @@ section .img{
   border: 1px solid #000;
   text-align: center;
   background: #fff;
+}
+
+.imagendetallada{
+  display: flex;
+  justify-content: center;
+}
+
+.imagendetallada img{
+  width: 100px;
+  margin: 10px;
+  border: 1px solid #000;
 }
 
 
@@ -227,23 +238,23 @@ section h3{
   font-style: italic;
 }
 
-.detail{
- margin-top: 200px;
-}
- table{
-  width:70%;
-  margin: 10px 70px 10px 80px;
-  
-}
-section .table .h3{
-  font-size: 25px;
+ article .DetallesProducto {
+  background: #DCD8B3;
+  width:90%;
+  margin: 8px 60px 10px 70px;
+  font-size: 15px;
   font-family: sans-serif;
   font-style: italic;
-  color:#fff;
+  
 }
-th { font-family: sans-serif; font-weight: bold; color:#2c2c28c4;background:#DCD8B3}
 
-tr { font-family: sans-serif; color:#0e0e0dc4 ; background:#f1eedb ;text-align:center }
+section .comentario{
+  width: 1320px;
+  height: 117px;
+  left: 433px;
+  top: 103px;
+  background:#fff;
+}
 
 section h1 {
   font-family: sans-serif;
@@ -260,16 +271,9 @@ section h6 {
   margin-top: 2px;
   color: rgb(17, 167, 236);
 }
-section .comentario{
-  width: 1880px;
-  height: 147px;
-  left: 463px;
-  top: 153px;
-  background:#fff;
-}
 
 section  input[type="text"]{
-  width: 1700px;
+  width: 1200px;
   height: 50px;
   margin: right;
   float: left;
@@ -285,7 +289,7 @@ section button {
   height: 34px;
   margin-top: 0px;
   margin-bottom: -60px;
-  margin: -90px 40px -110px 10px;
+  margin: -70px 40px -90px 10px;
 }
 
 
