@@ -247,13 +247,21 @@ section h3{
   font-style: italic;
   
 }
+.DetallesProducto h1, p{
+  padding: 10px;
+}
 
 section .comentario{
+  margin: auto;
   width: 1320px;
-  height: 117px;
+  height: 150px;
   left: 433px;
   top: 103px;
   background:#fff;
+}
+
+.content_coment{
+  padding: 20px;
 }
 
 section h1 {
@@ -282,14 +290,25 @@ section  input[type="text"]{
 
 }
 
-section button {  
+.PublicarComentario {  
   background: #428CB5;
   color: #fff;
   width: 190px;
   height: 34px;
-  margin-top: 0px;
-  margin-bottom: -60px;
-  margin: -70px 40px -90px 10px;
+  margin: 20px;
+}
+
+.Comentario-post{
+  margin: 30px;
+  background: #428CB5;
+  color: #fff;
+  width: 190px;
+  height: 34px;
+}
+
+.coment{
+  display: block;
+  text-align: right;
 }
 
 
