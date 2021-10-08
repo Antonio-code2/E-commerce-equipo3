@@ -13,6 +13,40 @@ margin-top: 150px;
 transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
+.wrap{
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+}
+
+.store-wrapper{
+    display: flex;
+}
+
+.category_list{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    background: #FAF4C3;
+}
+
+.category_list .category_item{
+    display: block;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.product_list{
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product_list .product_item{
+    width: 24%;
+    margin-left: 4%;
+
+}
 
 
 header{
@@ -128,3 +162,4 @@ form{
     border-radius: 10px;
     margin: auto;
 }
+
