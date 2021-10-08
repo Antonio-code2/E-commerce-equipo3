@@ -12,18 +12,34 @@
 <body>
     <header>
         <div class="icon_menu">
-            <i class="fas fa-bars"></i>
             <img src="imgbusqueda/logo.png" alt="">
 
         </div>
+
+        <form method="get" action="https://www.google.com/search">
+            <div>
+                <input class="entrada" type="search" name="q"> 
+                <label for= "name">Buscar </label>
+            </div>
+        </form>
+
     </header>
 
     <div class="menu__side">
         <div class="name_page">
-            <h4>CATEGORIAS</h4>
+            <h4>FILTRAR POR:</h4>
         </div>
 
+        <section>
+
         <div class="options__menu">
+            
+            <a href="#">
+                <div class="option">
+                    <h4>CATEGORÍAS</h4>
+                </div>
+            </a>
+            
             <a href="#">
                 <div class="option">
                     <h4>MERCADO</h4>
@@ -79,6 +95,7 @@
             </a>
 
         </div>
+    </section>
     </div>
     
 </body>
