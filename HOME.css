@@ -29,39 +29,26 @@ nav {
 
 /*cajones de cada producto*/
 .card {
-    
-
-
-    width: 25%;
-    display: block;
+    width: 250px;
+    display: flex;
     float: left;
     background-color:#DCD8B3;
     border-radius: 16px;
+     margin: 10px; /*----------------> esto fue lo que le puse a las cajas de productos para que se separaran */
+    align-items: center;
 }
-.ImagenProducto {
-    overflow: hidden;
-    width: 300px;
-    height: 200px;
-    margin-left: auto; 
-    margin-right: auto;
-    vertical-align: top;
-
-
+.ImagenProducto {  
+    width: 100%;
+    height: auto;
+    overflow: hidden;   
 }
-
-.ImagenProducto img {
-    height: 290px;
-    left: 210px;
-    
-}
+/* borre el selector img porque estaba generando conflicto con la clase card-img-top que serian la misma cosa, no puedes dar estilos a un selector que tambien tiene clase y darle estilos a esa clase tambien */
 
 /*modifica el tamaño de todas las imágenes*/
-img.card-img-top {
+.card-img-top {
     overflow: hidden;
-    width: 70%;
-    height: 200px;
-    margin-left: auto; 
-    margin-right: auto;
+    width: 100%;
+    height: 200px;  
 }
 
 /* CARACTERÍSTICAS DEL FOOTER*/
