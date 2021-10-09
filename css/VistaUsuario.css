@@ -1,0 +1,315 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background:#F5EA7E;
+	margin-bottom:15px;
+}
+
+header .encabezado {
+  width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background:#F5EA7E;
+	margin-bottom:20px;
+}
+
+.InicioyRegistro {
+  width:100%; /* Establecemos que el ancho sera del 90% */
+	max-width:650px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+}
+
+header .encabezado .presentacion .logo img {
+	color:#F5EA7E;
+  width: 15%;
+	float:left;
+}
+header .carrito img {
+  position: absolute;
+  width: 25px;
+  left: 88.57%;
+  right: 4.83%;
+  top: 6.7%;
+  bottom: 72.02%;
+  overflow:hidden;
+}
+
+header .avatar img {
+  position: absolute;
+  width: 20px;
+  left: 93.17%;
+  right: 5.83%;
+  top: 6.6%;
+  bottom: 72.02%;
+  overflow:hidden;
+}
+
+header nav {
+	float:right;
+	line-height:100px;
+}
+
+header nav a {
+	display:inline-block;
+	color:rgba(2, 2, 1, 0.698);
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+  font-family: sans-serif;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+.field {
+  display:flex;
+  position:absolute; top: -30px; left: 400px;
+  margin:3.5em auto;
+  width:30%;
+  flex-direction:row;
+  box-shadow: 1px 1px 0 rgb(25, 112, 211),
+
+}
+
+.field>input[type=text],
+.field>button {
+  display:block;
+  font-size: 25px;
+  font:1.2em 'sans-serif';
+}
+
+.field>input[type=text] {
+  flex:1;
+  padding:0.4em;
+  font-family: sans-serif;
+  font-size: 15px;
+  border:0.2em solid rgb(63, 129, 184);
+  color: #000;
+}
+
+.field>button[type=button] {
+  padding:0.6em 0.8em;
+  background: #428CB5;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+body {
+  width:100%;
+  background-color: #E5E5E5;;
+}
+.section_product{
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  margin: 20px;
+  }
+
+ .descripcionbreve {
+  display: block;
+  background: #DCD8B3;
+  width: 100%;
+  height: 493px;
+  margin-bottom:30px;
+}
+.descripcionbreve .contenido{
+  margin: 10px;
+  padding: 10px;
+}
+
+
+.descripcionbreve p {
+  margin: 10px 25px -45px 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.descripcionbreve h1 {
+  margin: 90px 80px 0px 10px;
+  font-size: 45px;
+  font-family: sans-serif;
+  margin-bottom:8px;
+}
+section .descripcionbreve h2 {
+  margin: 10px 60px 10px 50px;
+  font-size: 15px;
+  color: rgb(17, 167, 236);
+  font-family: sans-serif;
+  font-style: italic;
+}
+section .descripcionbreve h3 {
+  margin: 0px 90px 10px 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-style: italic;
+}
+section .descripcionbreve h6 {
+  margin: 10px 90px 20px 10px;
+  font-size: 15px;
+  color: rgb(17, 167, 236);
+  font-family: sans-serif;
+  font-style: italic;
+}
+section .img{
+  position: absolute;
+  width: 37px;
+  height: 30px;
+  left: 48px;
+  top: 744px;
+}
+.buy {
+  display: block;
+  padding:20px;
+  background: #428CB5;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  margin-bottom:8px;
+}
+
+.btn-container{
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.producto{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 30px;
+}
+.imagenproducto{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border: 1px solid #000;
+  text-align: center;
+  background: #fff;
+}
+
+.imagendetallada{
+  display: flex;
+  justify-content: center;
+}
+
+.imagendetallada img{
+  width: 100px;
+  margin: 10px;
+  border: 1px solid #000;
+}
+
+
+.DescripcionProducto {
+  background: #DCD8B3;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 5px 4px 4px rgba(17, 15, 15, 0.25);
+  margin: 10px 0;
+  
+}
+
+
+
+article .DescripcionProducto p {
+  margin: 0px 0px 0px 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+article .DescripcionProducto h1 {
+  margin: 0px 80px 0px 10px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+
+}
+section h3{
+  margin: 70px 80px 9px 80px;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+ article .DetallesProducto {
+  background: #DCD8B3;
+  width:90%;
+  margin: 8px 60px 10px 70px;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-style: italic;
+  
+}
+.DetallesProducto h1, p{
+  padding: 10px;
+}
+
+section .comentario{
+  margin: auto;
+  width: 1320px;
+  height: 150px;
+  left: 433px;
+  top: 103px;
+  background:#fff;
+}
+
+.content_coment{
+  padding: 20px;
+}
+
+section h1 {
+  font-family: sans-serif;
+  text-align: left;
+  margin-left: 8px;
+  font-size: 15px;
+  color: #0b0c0c;
+}
+section h6 {
+  font-family: sans-serif;
+  text-align:left;
+  float: left;
+  margin-left: 80px;
+  margin-top: 2px;
+  color: rgb(17, 167, 236);
+}
+
+section  input[type="text"]{
+  width: 1200px;
+  height: 50px;
+  margin: right;
+  float: left;
+  margin: -39px 30px 0px 80px;
+  margin-bottom:10px;
+
+}
+
+.PublicarComentario {  
+  background: #428CB5;
+  color: #fff;
+  width: 190px;
+  height: 34px;
+  margin: 20px;
+}
+
+.Comentario-post{
+  margin: 30px;
+  background: #428CB5;
+  color: #fff;
+  width: 190px;
+  height: 34px;
+}
+
+.coment{
+  display: block;
+  text-align: right;
+}
+
+
+
