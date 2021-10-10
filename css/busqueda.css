@@ -31,24 +31,38 @@ transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
     background: #FAF4C3;
 }
 
-.category_list .price_item{
+.category_list .Price{
     display: block;
     width: 90%;
+    margin-top: 20px;
     margin-bottom: 20px;
+    line-height: 25px;
 }
 
 .category_list .category_item{
     display: block;
     width: 90%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
+
+/* Para sombrear el enlace seleccionado */
 .category_list .ct_item-active{
 	background: #e2e97e;
 }
 
+.category_list .Stars{
+    display: block;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.card_star_img .fa-star{
+    color: #FADC40
+}
+
 .product_list{
-    width: 72%;
+    width: 82%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -60,8 +74,6 @@ transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
     box-shadow: 0px 0px 6px 0px #DCD8B3;
     border-radius: 16px;
     display: flex;
-   
- 
 }
 
 .card-text{
@@ -69,12 +81,18 @@ transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
     width: 100%;
 }
 
-.produt_img{
+.product_img{
     display: block;
-    width: 100%;
+    width: 200px;
+    justify-content: center;
+    margin-right: 15px;
+    
 }
-.produt_img img{
-    width: 100%;
+.product_img img{
+    width: 50;
+    height: 50;
+    margin: 10px;
+    justify-content: center
 }
 
 /* .product_list .product_item img{
@@ -100,13 +118,27 @@ transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
 }
 
 
 /* contenedor donde estan las imagenes de carrito y corazon, tambien boton de ver mas */
 .card-info{
     display: flex;
+    width: 100%;
+    height: 100%;
 }
+
+.card-link .fa-heart, .fa-cart-plus{
+    margin: 0;
+    color: #428CB5
+}
+
+.card_info_img{
+    display: flex;
+}
+
+
 
 header{
     width: 100%;

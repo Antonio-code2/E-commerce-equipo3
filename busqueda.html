@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="css/busqueda.css">
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/busqueda.js"></script>
-
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -30,10 +29,67 @@
         <div class="store-wrapper">
 
             <div class="category_list">
-                <a href="#" class="price_item" price="all">PRECIO</a>
-                <a href="#" class="price_item" price="Menos">Menos de $1.000.000</a>
-                <a href="#" class="price_item" price="Entre"> De $1.000.000 a $2.000.000</a>
-                <a href="#" class="price_item" price="Menos">Más de $2.000.000</a>
+                
+                <div class="Price">
+                    <a href="#" class="price_item" price="all">PRECIO</a>
+                    <div class="Prices">
+                        <a href="#" class="price_item" price="Menos">Menos de $1.000.000</a>
+                        <input type="checkbox" name="price" id="Menos">
+                    </div>
+                    <div class="Prices">
+                        <a href="#" class="price_item" price="Entre"> De $1.000.000 a $2.000.000</a>
+                        <input type="checkbox" name="price" id="Entre">
+                    </div>
+                    <div class="Prices">
+                        <a href="#" class="price_item" price="Mas">Más de $2.000.000</a>
+                        <input type="checkbox" name="price" id="Mas">
+                    </div>
+                </div>
+
+                <div class="Stars">
+                    <a href="#" class="Stars_item" price="all">CALIFICACIÓN</a>
+                    <div class="card_star_img">
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <input type="checkbox" name="star" id="one_start">
+                    </div>
+                    <div class="card_star_img">
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <input type="checkbox" name="star" id="two_start">
+                    </div>
+                    <div class="card_star_img">
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <input type="checkbox" name="star" id="three_start">
+                    </div>
+                    <div class="card_star_img">
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <input type="checkbox" name="star" id="four_start">
+                    </div>
+                    <div class="card_star_img">
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <input type="checkbox" name="star" id="five_start">
+                    </div>
+                </div>
+
                 <a href="#" class="category_item" category="all">CATEGORIAS</a>
                 <a href="#" class="category_item" category="Electrodomésticos">Electrodomésticos</a>
                 <a href="#" class="category_item" category="Electrónicos">Electrónicos</a>
@@ -61,8 +117,8 @@
                         <div class="card-info">
                             <a href="#" class="card-link">Ver Más</a>
                             <div class="card_info_img">
-                            <a href="#" class="card-link"><img src="imgbusqueda/corazon.png"></a>
-                            <a href="#" class="card-link"><img src="imgbusqueda/carroazul.png"></a>
+                            <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                            <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
                             </div>
                             
                         </div>
@@ -70,79 +126,142 @@
                 </div>
 
                 <div class="product_item" category="Electrónicos" price="Menos">
-                    <img src="imgbusqueda/audifonos.jpg" alt="">
-                    <a href="#">Audífonos Gamer</a>
-                    <a href="#">$200.000</a>
+                    <div class="product_img">
+                        <img src="imgbusqueda/audifonos.jpg" alt="">
+                    </div>
+
                     <div class="card-body">
-                        <a href="#" class="card-link">Ver Más</a>
-                        <a href="#" class="card-link"><img src="imgbusqueda/corazon.png"></a>
-                        <a href="#" class="card-link"><img src="imgbusqueda/carroazul.png"></a>
+                        <div class="card-text">
+                            <a href="#">Audífonos Gamer</a>
+                            <a href="#">$200.000</a>
+                        </div>
+                        <div class="card-info">
+                            <a href="#" class="card-link">Ver Más</a>
+                            <div class="card_info_img">
+                                <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                                <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="product_item" category="Electrónicos" price="Entre">
-                    <img src="imgbusqueda/xiaomi.jpg" alt="">
-                    <a href="#">Xiaomi Redmi Note 10 Pro </a>
-                    <a href="#">$1.300.000</a>
+                    <div class="product_img">
+                        <img src="imgbusqueda/xiaomi.jpg" alt="">
+                    </div>
+                    
                     <div class="card-body">
-                        <a href="#" class="card-link">Ver Más</a>
-                        <a href="#" class="card-link"><img src="imgbusqueda/corazon.png"></a>
-                        <a href="#" class="card-link"><img src="imgbusqueda/carroazul.png"></a>
+                        <div class="card-text">
+                            <a href="#">Xiaomi Redmi Note 10 Pro </a>
+                            <a href="#">$1.300.000</a>
+                        </div>
+                        <div class="card-info">
+                            <a href="#" class="card-link">Ver Más</a>
+                            <div class="card_info_img">
+                                <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                                <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="product_item" category="Hogar" price="Entre">
-                    <img src="imgbusqueda/5. cuchillos.jpg" alt="">
-                    <a href="#">Set de Cuchillos Tramontina Profesional</a>
-                    <a href="#">$1.500.000</a>
+                    <div class="product_img">
+                        <img src="imgbusqueda/5. cuchillos.jpg" alt="">
+                    </div>
+
                     <div class="card-body">
-                        <a href="#" class="card-link">Ver Más</a>
-                        <a href="#" class="card-link"><img src="imgbusqueda/corazon.png"></a>
-                        <a href="#" class="card-link"><img src="imgbusqueda/carroazul.png"></a>
+                        <div class="card-text">
+                            <a href="#">Set de Cuchillos Tramontina Profesional</a>
+                            <a href="#">$1.500.000</a>
+                        </div>
+                        <div class="card-info">
+                            <a href="#" class="card-link">Ver Más</a>
+                            <div class="card_info_img">
+                                <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                                <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="product_item" category="Hogar" price="Menos">
-                    <img src="imgbusqueda/6. termos.jpg" alt="">
-                    <a href="#">Termos Home</a>
-                    <a href="#">$500.000</a>
+                    <div class="product_img">
+                        <img src="imgbusqueda/6. termos.jpg" alt="">
+                    </div>
+
                     <div class="card-body">
-                        <a href="#" class="card-link">Ver Más</a>
-                        <a href="#" class="card-link"><img src="imgbusqueda/corazon.png"></a>
-                        <a href="#" class="card-link"><img src="imgbusqueda/carroazul.png"></a>
+                        <div class="card-text">
+                            <a href="#">Termos Home</a>
+                            <a href="#">$500.000</a>
+                        </div>
+                        <div class="card-info">
+                            <a href="#" class="card-link">Ver Más</a>
+                            <div class="card_info_img">
+                                <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                                <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="product_item" category="Deportes" price="Menos">
-                    <img src="imgbusqueda/8. termodepor.jpg" alt="">
-                    <a href="#">Termo cycle</a>
-                    <a href="#">$60.000</a>
+                    <div class="product_img">
+                        <img src="imgbusqueda/8. termodepor.jpg" alt="">
+                    </div>
+
                     <div class="card-body">
-                        <a href="#" class="card-link">Ver Más</a>
-                        <a href="#" class="card-link"><img src="imgbusqueda/corazon.png"></a>
-                        <a href="#" class="card-link"><img src="imgbusqueda/carroazul.png"></a>
+                        <div class="card-text">
+                            <a href="#">Termo cycle</a>
+                            <a href="#">$60.000</a>
+                        </div>
+                        <div class="card-info">
+                            <a href="#" class="card-link">Ver Más</a>
+                            <div class="card_info_img">
+                                <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                                <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="product_item" category="Deportes" price="Más">
-                    <img src="imgbusqueda/bici.jpg" alt="">
-                    <a href="#">Bicicleta cycle</a>
-                    <a href="#">$2.500.000</a>
+                    <div class="product_img">
+                        <img src="imgbusqueda/bici.jpg" alt="">
+                    </div>
+
                     <div class="card-body">
-                        <a href="#" class="card-link">Ver Más</a>
-                        <a href="#" class="card-link"><img src="imgbusqueda/corazon.png"></a>
-                        <a href="#" class="card-link"><img src="imgbusqueda/carroazul.png"></a>
+                        <div class="card-text">
+                            <a href="#">Bicicleta cycle</a>
+                            <a href="#">$2.500.000</a>
+                        </div>
+                        <div class="card-info">
+                            <a href="#" class="card-link">Ver Más</a>
+                            <div class="card_info_img">
+                                <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                                <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="product_item" category="Deportes" price="Entre">
-                    <img src="imgbusqueda/boxeo.jpg" alt="">
-                    <a href="#">Saco de Boxeo Hard</a>
-                    <a href="#">$2.100.000</a>
+                    <div class="product_img">
+                        <img src="imgbusqueda/boxeo.jpg" alt="">
+                    </div>
+
                     <div class="card-body">
-                        <a href="#" class="card-link">Ver Más</a>
-                        <a href="#" class="card-link"><img src="imgbusqueda/corazon.png"></a>
-                        <a href="#" class="card-link"><img src="imgbusqueda/carroazul.png"></a>
+                        <div class="card-text">
+                            <a href="#">Saco de Boxeo Hard</a>
+                            <a href="#">$2.100.000</a>
+                        </div>
+                        <div class="card-info">
+                            <a href="#" class="card-link">Ver Más</a>
+                            <div class="card_info_img">
+                                <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                                <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
