@@ -1,8 +1,8 @@
- /*cambio de tamaño de carro y usuario*/
-nav img {
+ /*CAMBIO TAMAÑO DE LOGO*/
+ nav img {
     height: 30px;
 }
-/*separación de iconos en la página*/
+/*SEPARACIÓN ÍCONOS NAV*/
 nav {
     display: flex;
     justify-content: space-around;
@@ -10,46 +10,27 @@ nav {
     height: 100px;
 }
 
+/*CARACTERÍSTICAS PADRE*/
 .padre {
     display: flex;
 }
-/*características de categorías*/
-.categories {
-    width: 20%;
-    background-color: #A1D9E0;
-}
+ 
 /*ocupación de productos en body*/
 .products {
     width: 90%;
 }
 
-.card-body img {
-    width: 30px;
+/*MODIFICA POSICIÓN DE LAS IMÁGENES DEL CARRUSEL*/
+.carousel-item img {
+    vertical-align: middle;
+    border-style: inset;
+    height: 161.33px;
+    border-style: inset;
+    margin: 25px;
 }
 
-/*cajones de cada producto*/
-.card {
-    width: 250px;
-    display: flex;
-    float: left;
-    background-color:#DCD8B3;
-    border-radius: 16px;
-     margin: 10px; /*----------------> esto fue lo que le puse a las cajas de productos para que se separaran */
-    align-items: center;
-}
-.ImagenProducto {  
-    width: 100%;
-    height: auto;
-    overflow: hidden;   
-}
-/* borre el selector img porque estaba generando conflicto con la clase card-img-top que serian la misma cosa, no puedes dar estilos a un selector que tambien tiene clase y darle estilos a esa clase tambien */
 
-/*modifica el tamaño de todas las imágenes*/
-.card-img-top {
-    overflow: hidden;
-    width: 100%;
-    height: 200px;  
-}
+
 
 /* CARACTERÍSTICAS DEL FOOTER*/
 footer {   /* CAJÓN INFERIOR*/
@@ -109,26 +90,6 @@ div#redes {
     color: black;
 }
 
-a.cateProductos {
-    color: #8E8686;
-    font-family: Poppins;
-    font-style: italic;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-
-}
-h5.card-title.text-center {
-    font-family: Roboto;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: #232323;
-}
-
 .card-title {
     margin-bottom: .75rem;
     color: black;
@@ -138,3 +99,115 @@ h5.card-title.text-center {
     margin-bottom: 0;
     color: black;
 }
+
+img#img {
+    HEIGHT: 200PX;
+}
+
+
+/*NUEVAS CONTENDORES*/
+ /*CAJA DE CATEGORÍAS*/
+div#categories{
+    width: 193.46px;
+    height: 579.65px;
+    background-color: #A1D9E0;
+    position: absolute; 
+    left: 3px;
+    top: 306.03px;
+}
+
+/*COLOR Y FUENTE DE CATEGORÍAS*/
+
+/*TITULO CATEGORÍAS*/
+label#categorías {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center; /*NO ME QUIERE CENTRAR*/
+    color: black;
+}
+
+/*SUBTITULO DE PRODUCTOS*/
+a.cateProductos {
+    color: #8E8686;
+    font-family: poppins; /*NO RECONOCE LA FUENTE*/
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right; /*NO SE QUIERE CORRER EL TEXTO PARA QUE NO QUEDE A LA DERECHA*/
+}
+
+/*CONTENEDORES*/ 
+.contenedor{
+    width: 282.65px;
+    height: 283.84px;
+    background-color: #DCD8B3;
+    position: absolute; 
+    left: 210.79px;
+    top: 306.06px;
+    border-radius: 16px;
+    float: left;
+    align-items: center;
+    margin: 10px; /*----------------> esto fue lo que le puse a las cajas de productos para que se separaran */
+    float: left;
+}
+
+/*CAMBIO DE LETRAS DE TÍTULOS*/ 
+div {
+    font-family: cursive;
+    line-height: 5px;
+
+}
+
+
+
+
+
+
+/*titulo dentro de contenedor*/
+.card-title {
+    margin-bottom: .75rem;
+    color: black;
+    Weight: 300;
+    Style: italic;
+    Size: 18px;
+    height: 20px;
+}
+
+.card-text {
+    margin-bottom: 0;
+    color: black;
+    Weight: 500px;
+    Style: italic;
+    Size: 18px;
+    height: 20px;
+}
+
+
+
+
+
+/*.carousel-item {
+    position:relative;
+    display: none;
+    float: revert;
+    width: 300px;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .10s ease-in-out;
+    transition: transform .10s ease-in-out;
+    transition: transform .10s ease-in-out,-webkit-transform .6s ease-in-out;
+}
+/*position: relative;
+display: none;
+float: left;
+width: 100%;
+margin-right: -100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+transition: -webkit-transform .6s ease-in-out;
+transition: transform .6s ease-in-out;
+transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;*/

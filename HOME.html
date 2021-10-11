@@ -7,6 +7,7 @@
     <title>HOME</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="HOME.css">
 </head>
 <header>
@@ -22,8 +23,9 @@
         <a class="entrada" href="#">registrarse</a> <!--INGRESO A REGISTRARSE-->
       </div>
       <div>
-        <a class="entrada" href="#"><img src="img/carrito.jpg"></a>    <!--INGRESO A INICIO-->
-        <a class="entrada" href="#"><img src="img/usuario.jpg"></a> <!--INGRESO A REGISTRARSE-->
+        <a class="entrada" href="#">
+        </a>    <!--INGRESO A INICIO-->
+        <a class="entrada" href="#"></a> <!--INGRESO A REGISTRARSE-->
       </div>
     </nav>
     <!--CARRUSEL-->
@@ -38,20 +40,20 @@
 <!--PRIMERA IMAGEN CARRUSEL-->
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img class="d-block w-80" id="img" src="img/promo1.jpg" alt="First slide">
-                      <div class="carousel-caption d-none d-md-block">
+                      <img class="d-w-100" id="imagenCarrusel" src="img/promocion.jpg" alt="First slide">
+                      <div class="carousel-caption d-none d-md">
                       </div>
                     </div>
 <!--SEGUNDA IMAGEN CARRUSEL-->
                     <div class="carousel-item">
-                      <img class="d-block w-80" id="img" src="img/tic.jpg" alt="Second slide">
-                      <div class="carousel-caption d-none d-md-block">
+                      <img class="d-w-400" id="imagenCarrusel" src="img/ventas.jpg" alt="Second slide">
+                      <div class="carousel-caption d-none d-md">
                       </div>
                     </div>
 <!--TERCERA IMAGEN CARRUSEL-->
                     <div class="carousel-item">
-                      <img class="d-block w-98" id="img" src="img/promo2.jpg" alt="Third slide"> 
-                      <div class="carousel-caption d-none d-md-block">
+                      <img class="d-w-100" id="imagenCarrusel" src="img/promo2.jpg" alt="Third slide"> 
+                      <div class="carousel-caption d-none d-md">
                       </div>
                     </div>
                   </div>
@@ -72,9 +74,8 @@
 
 <body>
     <div class ="padre">
-        <div class="categories"> 
-            <h5 class="card-title text-center"> <label id= "categorías"> Categorías</label></h5> 
-    
+<!--CONTENEDOR CATEGORÍAS-->
+        <div id= "categories"> <h4 class="TituloCategorias text-center"></h4><label id= "categorías">Categorías</label> <br> 
             <a class="cateProductos" href="#">Electrodomésticos</a><br>
             <a class="cateProductos" href="#">Electrónicos</a><br>
             <a class="cateProductos" href="#">Camping</a><br>
@@ -85,68 +86,81 @@
             <a class="cateProductos" href="#">Ropa</a><br>
             <a class="cateProductos" href="#">hogar</a>
         </div>
-<!-- CUADRO DE AUDIFONOS -->
-    <div class="products"> 
-                <div class="card">
-                    <div class= ImagenProducto>
-                        <img src="img/audifonos.jpg" class="card-img-top" >
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Audifonos Gamer</h5>
-                      <p class="card-text">$50.000</p>
-                    </div>
-                    <div class="card-body">
-                      <a href="#" class="card-link">Ver Más</a>
-                      <a href="#" class="card-link"><img src="img/corazon.png"></a>
-                      <a href="#" class="card-link"><img src="img/carroazul.png"></a>
-                    </div>
-                  </div>
-<!-- CUADRO DE MICRO -->       
-                  <div class="card">
-                    <div class= ImagenProducto>
-                    <img src="img/micro.jpg" class="card-img-top" >
-                  </div>
-                    <div class="card-body">
+      </div>
+
+<!-- CONTENEDOR DE AUDIFONOS -->
+        <div class="contenedor"> 
+            <div class= "ImagenProducto">
+           <!-- <img src="img/audifonos.jpg" class="card-img-top">-->
+            </div>
+             
+              <div class="productoTitulo">
+              <h5 class="card-title">Audifonos Gamer</h5>
+              <p class="card-text">$50.000</p>
+              </div>
+
+              <div class="entradasContenedor">
+              <a href="#" class="card-link">Ver Más</a>
+              <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+              <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+              </div>
+          </div>
+
+<!-- CUADRO DE MICRO --> 
+        <div class="contenedor"> 
+            <div class= "ImagenProducto">
+           <!-- <img src="img/micro.jpg" class="card-img-top">-->
+            </div>
+             
+              <div class="productoTitulo">
                       <h5 class="card-title">Horno Microondas</h5>
                       <p class="card-text">$500.000</p>
-                    </div>
-                    <div class="card-body">
-                      <a href="#" class="card-link">Ver Más</a>
-                      <a href="#" class="card-link"><img src="img/corazon.png"></a>
-                      <a href="#" class="card-link"><img src="img/carroazul.png"></a>
-                    </div>
+              </div>
+
+              <div class="entradasContenedor">
+              <a href="#" class="card-link">Ver Más</a>
+              <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+              <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+              </div>
+          </div>
+
+<!-- SACO DE BOXEO --> 
+         <div class="contenedor"> 
+            <div class= "ImagenProducto">
+            <!--<img src="img/boxeo.jpg" class="card-img-top"> -->
                   </div>
-<!-- CUADRO DE BOXEO-->       
-                <div class="card">
-                  <div class= ImagenProducto>
-                    <img src="img/boxeo.jpg" class="card-img-top" >
-                  </div>
-                    <div class="card-body">
+
+                <div class="productoTitulo">
                     <h5 class="card-title">Saco de Boxeo</h5>
                     <p class="card-text">$90.000</p>
-                    </div>
-                    <div class="card-body">
-                    <a href="#" class="card-link">Ver Más</a>
-                    <a href="#" class="card-link"><img src="img/corazon.png"></a>
-                    <a href="#" class="card-link"><img src="img/carroazul.png"></a>
-                    </div>
                 </div>
-<!-- CUADRO DE BICI -->       
-                <div class="card">
-                  <div class= ImagenProducto>
-                    <img src="img/bici.jpg" class="card-img-top" >
+
+                <div class="entradasContenedor">
+                <a href="#" class="card-link">Ver Más</a>
+                <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+
+<!-- CUADRO DE BICI       -->
+            <div class="contenedor"> 
+              <div class= "ImagenProducto">
+                    <!--<img src="img/bici.jpg" class="card-img-top" > -->
                   </div>
-                    <div class="card-body">
+
+                    <div class="productoTitulo">
                     <h5 class="card-title">Bicicleta Todo Terreno</h5>
                     <p class="card-text">$900.000</p>
                     </div>
-                    <div class="card-body">
+
+                    <div class="entradasContenedor">
                     <a href="#" class="card-link">Ver Más</a>
-                    <a href="#" class="card-link"><img src="img/corazon.png"></a>
-                    <a href="#" class="card-link"><img src="img/carroazul.png"></a>
+                    <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                    <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
                     </div>
                 </div>
-<!-- CUADRO DE CUCHILLOS -->
+
+<!-- CUADRO DE CUCHILLOS 
                     <div class="card">
                       <div class= ImagenProducto>
                         <img src="img/5. cuchillos.jpg" class="card-img-top" >
@@ -157,11 +171,11 @@
                         </div>
                         <div class="card-body">
                           <a href="#" class="card-link">Ver Más</a>
-                          <a href="#" class="card-link"><img src="img/corazon.png"></a>
-                          <a href="#" class="card-link"><img src="img/carroazul.png"></a>
+                          <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                          <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
                         </div>
                       </div>
-<!-- CUADRO DE TERMOS -->       
+<!-- CUADRO DE TERMOS    
                     <div class="card">
                       <div class= ImagenProducto>
                       <img src="img/6. termos.jpg" class="card-img-top" >
@@ -172,11 +186,11 @@
                       </div>
                       <div class="card-body">
                         <a href="#" class="card-link">Ver Más</a>
-                        <a href="#" class="card-link"><img src="img/corazon.png"></a>
-                        <a href="#" class="card-link"><img src="img/carroazul.png"></a>
+                        <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
                       </div>
                     </div>
-<!-- CUADRO DE CELULAR  -->    
+<!-- CUADRO DE CELULAR      
   
                     <div class="card">
                       <div class= ImagenProducto>
@@ -188,11 +202,11 @@
                         </div>
                         <div class="card-body">
                         <a href="#" class="card-link">Ver Más</a>
-                        <a href="#" class="card-link"><img src="img/corazon.png"></a>
-                        <a href="#" class="card-link"><img src="img/carroazul.png"></a>
+                        <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
                         </div>
                     </div>
-<!-- CUADRO DE  TERMO DEPORTIVO-->    
+ CUADRO DE  TERMO DEPORTIVO    
     <div class="card">
       <div class= ImagenProducto>
         <img src="img/8. termodepor.jpg" class="card-img-top" >
@@ -203,14 +217,14 @@
         </div>
         <div class="card-body">
         <a href="#" class="card-link">Ver Más</a>
-        <a href="#" class="card-link"><img src="img/corazon.png"></a>
-        <a href="#" class="card-link"><img src="img/carroazul.png"></a>
+        <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+        <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
         </div>
     </div>   
   </div>
-</div>
+</div>-->
 
-<footer>
+<!--<footer>
   <div class= "lastInfo" id= politics><p id="mensajito">
     <div>Políticas de Privacidad</div>
       <br>Términos y condiciones<br>
@@ -233,11 +247,11 @@
   <div class= "lastInfo" id="redes"><p id="mensajito">
     <div>
       <div id="redes">SIGUENOS</p></div> 
-      <i class="fa fa-facebook fa-4x"></i>  <i class="fa fa-instagram fa-4x"></i>  <i class="fa fa-youtube fa-4x"> </i>
+      <i class="fab fa-facebook-square"></i>  <i class="fab fa-instagram"></i>  <i class="fab fa-youtube"></i>
     </div> 
   </div>
 
-</footer>
+</footer>-->
 </body>
 
 
