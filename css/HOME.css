@@ -107,12 +107,12 @@ div#redes {
 }
 
 .card-title {
-    margin-bottom: .75rem;
+    font-size: 20px;
     color: black;
 }
 
-.card-text:last-child {
-    margin-bottom: 0;
+.card-text{
+    font-size: 15px;
     color: black;
 }
 
@@ -175,30 +175,24 @@ label#categorías {
    
 
 }
+
+
 .card-body{
     margin: 10px;
+    height: 100px;
 }
 
 .ImagenProducto{
+    display: block;
+    text-align: center;
     width: 100%;
     height: 300px;
     overflow: hidden;
 }
 .ImagenProducto img{
-    width: 100%;
+    width: 90%;
+    margin: 5px;
 }
-
-/*CAMBIO DE LETRAS DE TÍTULOS*/ 
-div {
-    font-family: cursive;
-    line-height: 5px;
-
-}
-
-
-
-
-
 
 /*titulo dentro de contenedor*/
 .card-title {
@@ -211,9 +205,23 @@ div {
 .card-text {
     margin-bottom: 0;
     color: black;
-    Size: 18px;
+   font-size: 18px;
     height: 20px;
 }
 
-
-
+.entradasContenedor{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.entradasContenedor .info a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #000;
+}
+.entradasContenedor .link-icon a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
