@@ -15,27 +15,17 @@ nav {
     background-color: #F5EA7E;
     height: 100px;
 }
-
 .main{
     display: grid;
     grid-template-columns: 200px 1fr;
     width: 100%;
-
 }
-
-
 /*CARACTERÍSTICAS PADRE*/
 .padre {
   height: 100%;
   background-color: #A1D9E0;
   margin: 10px 5px;
 }
- 
-/*ocupación de productos en body*/
-.products {
-    width: 90%;
-}
-
 /*MODIFICA POSICIÓN DE LAS IMÁGENES DEL CARRUSEL*/
 .carousel-item img {
     vertical-align: middle;
@@ -44,10 +34,6 @@ nav {
     border-style: inset;
     margin: 25px;
 }
-
-
-
-
 /* CARACTERÍSTICAS DEL FOOTER*/
 footer {   /* CAJÓN INFERIOR*/
     display: flex;
@@ -56,92 +42,63 @@ footer {   /* CAJÓN INFERIOR*/
     height:150px;
     margin-top: 20px;
 }
-/* TITULO POLITICS*/
+/* TEXTO POLITICS*/
 div#politics {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 19px;
+    line-height: 25px;
     color: #FFFFFF;
 }
-
+/* TEXTO CONTACTOS*/
 div#contact {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 19px;
+    line-height: 25px;
     color: #FFFFFF;
 }
 
-
+/* TEXTO PREGUNTAS*/
 div#questions {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 15px;
-    color: #FFFFFF;
-}
-/* TEXTOS DEBAJO DE TÍTULOS*/
-div { 
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 5px;
+    line-height: 25px;
     color: #FFFFFF;
 }
 
+/* TEXTO SIGUENOS*/
 div#redes {
     font-style: normal;
     font-weight: bolder;
-    font-size: 13px;
-    line-height: 5px;
+    line-height: 30px;
     color: #FFFFFF;
 }
 
-.fa{
-    color: black;
+/* TEXTOS DEBAJO DE TÍTULOS*/
+div {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
 }
 
-.card-title {
-    font-size: 20px;
-    color: black;
+/* CAMBIO DE COLOR DE LOGOS DE REDES*/
+::before {
+    color:#000;
 }
 
-.card-text{
-    font-size: 15px;
-    color: black;
-}
-
-img#img {
-    HEIGHT: 200PX;
-}
-
-
-/*NUEVAS CONTENDORES*/
+/*CONTENDORES*/
  /*CAJA DE CATEGORÍAS*/
-
-
- 
 .container_card{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
-    margin: 10px;
-
-}
-
-#categories{
-    width:200px;
-    height: 100%;
-    position: absolute; 
-}
-
-.filtro{
-    margin: 10px;
+    margin: 10px
 }
 /*COLOR Y FUENTE DE CATEGORÍAS*/
 
@@ -172,10 +129,7 @@ label#categorías {
     height: auto;
     background-color: #DCD8B3;
     border-radius: 16px;
-   
-
 }
-
 
 .card-body{
     margin: 10px;
@@ -189,6 +143,7 @@ label#categorías {
     height: 300px;
     overflow: hidden;
 }
+
 .ImagenProducto img{
     width: 90%;
     margin: 5px;
@@ -214,14 +169,17 @@ label#categorías {
     justify-content: space-between;
     margin: 10px;
 }
+
 .entradasContenedor .info a{
     text-decoration: none;
     font-size: 20px;
     margin-top: 10px;
-    color: #000;
+    color: #37A3BB;
 }
+
 .entradasContenedor .link-icon a{
     text-decoration: none;
     font-size: 20px;
-    color: #000;
+    color: #37A3BB;
 }
+
