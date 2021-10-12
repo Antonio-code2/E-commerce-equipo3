@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+margin-left: 150;
+margin-top: 150px;
+transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.wrap{
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+}
+
+.store-wrapper{
+    display: flex;
+}
+
+.category_list{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    align-items: center;
+    background: #FAF4C3;
+}
+
+.category_list .price_item{
+    display: block;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.category_list .category_item{
+    display: block;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.category_list .ct_item-active{
+	background: #e2e97e;
+}
+
+.product_list{
+    width: 72%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product_list .product_item{
+    width: 80%;
+    margin-left: 3%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 6px 0px #DCD8B3;
+    border-radius: 16px;
+    display: flex;
+   
+ 
+}
+
+.card-text{
+    display: block;
+    width: 100%;
+}
+
+.produt_img{
+    display: block;
+    width: 100%;
+}
+.produt_img img{
+    width: 100%;
+}
+
+/* .product_list .product_item img{
+    overflow: hidden;
+    width: 50%;
+    height: 100px; 
+} */
+
+.product_list .product_item a{
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    background: #DCD8B3;
+    Color: black
+}
+
+.product_list .product_item .card-body img{
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/* contenedor donde estan las imagenes de carrito y corazon, tambien boton de ver mas */
+.card-info{
+    display: flex;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: #F5EA7E;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+ 
+.icon_menu{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px);
+}
+
+.icon_menu img{
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+
+img {
+    width: 100px;
+    margin-left: 80px;
+}
+
+form{
+    width: 100px;
+    padding: 8px;
+    border-radius: 10px;
+    margin: auto;
+}
+
