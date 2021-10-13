@@ -7,107 +7,6 @@
 
 }
 
-body{
-margin-left: 150;
-margin-top: 150px;
-transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-
-.wrap{
-    max-width: 1100px;
-    width: 90%;
-    margin: auto;
-}
-
-.store-wrapper{
-    display: flex;
-}
-
-.category_list{
-    display: flex;
-    flex-direction: column;
-    width: 18%;
-    align-items: center;
-    background: #FAF4C3;
-}
-
-.category_list .price_item{
-    display: block;
-    width: 90%;
-    margin-bottom: 20px;
-}
-
-.category_list .category_item{
-    display: block;
-    width: 90%;
-    margin-bottom: 20px;
-}
-
-.category_list .ct_item-active{
-	background: #e2e97e;
-}
-
-.product_list{
-    width: 72%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.product_list .product_item{
-    width: 80%;
-    margin-left: 3%;
-    margin-bottom: 25px;
-    box-shadow: 0px 0px 6px 0px #DCD8B3;
-    border-radius: 16px;
-    display: flex;
-   
- 
-}
-
-.card-text{
-    display: block;
-    width: 100%;
-}
-
-.produt_img{
-    display: block;
-    width: 100%;
-}
-.produt_img img{
-    width: 100%;
-}
-
-/* .product_list .product_item img{
-    overflow: hidden;
-    width: 50%;
-    height: 100px; 
-} */
-
-.product_list .product_item a{
-    display: flex;
-    width: 100%;
-    padding: 8px;
-    background: #DCD8B3;
-    Color: black
-}
-
-.product_list .product_item .card-body img{
-    width: 20px;
-    height: 20px;
-    overflow: hidden;
-}
-.card-body{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-
-/* contenedor donde estan las imagenes de carrito y corazon, tambien boton de ver mas */
-.card-info{
-    display: flex;
-}
-
 header{
     width: 100%;
     height: 80px;
@@ -140,9 +39,167 @@ img {
 }
 
 form{
+    /* display: block; */
     width: 100px;
-    padding: 8px;
     border-radius: 10px;
     margin: auto;
+    margin-right: 200px; 
+    display: flex;
+    padding-right: 15px;
+  
 }
+
+.InicioyRegistro {
+    margin-right: 20px;
+    display: flex;
+    padding-right: 10px;
+    
+}
+
+.InicioyRegistro a{
+    color: #000000
+}
+
+.card_emoticones_img{
+    margin-right: 50px;
+}
+
+.card-img{
+    color: #7B7373;
+    margin: 10px;
+    justify-content: center;
+}
+
+body{
+margin-left: 150;
+margin-top: 150px;
+transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.wrap{
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+}
+
+.store-wrapper{
+    display: flex;
+}
+
+.category_list{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    align-items: center;
+    background: #FAF4C3;
+}
+
+.category_list .Price{
+    display: block;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.category_list .category_item{
+    display: block;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+
+/* Para sombrear el enlace seleccionado */
+.category_list .ct_item-active{
+	background: #e2e97e;
+}
+
+.category_list .Stars{
+    display: block;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.card_star_img .fa-star{
+    color: #FADC40
+}
+
+.product_list{
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product_list .product_item{
+    width: 80%;
+    margin-left: 3%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 6px 0px #DCD8B3;
+    border-radius: 16px;
+    display: flex;
+}
+
+.card-text{
+    display: block;
+    width: 100%;
+}
+
+.product_img{
+    display: block;
+    width: 200px;
+    justify-content: center;
+    margin-right: 15px;
+    
+}
+.product_img img{
+    width: 50;
+    height: 50;
+    margin: 10px;
+    justify-content: center
+}
+
+/* .product_list .product_item img{
+    overflow: hidden;
+    width: 50%;
+    height: 100px; 
+} */
+
+.product_list .product_item a{
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    background: #DCD8B3;
+    Color: black
+}
+
+.product_list .product_item .card-body img{
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* contenedor donde estan las imagenes de carrito y corazon, tambien boton de ver mas */
+.card-info{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.card-link .fa-heart, .fa-cart-plus{
+    margin: 0;
+    color: #428CB5
+}
+
+.card_info_img{
+    display: flex;
+}
+
+
 
