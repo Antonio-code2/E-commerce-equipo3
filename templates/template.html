@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/VistaUSuario.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/global.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/HOME.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static', filename='imgDetalleP/logo.png')}}" type="image/x-icon" >
+ <!-- iconos de fontawosome -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+   {% endblock %}
+</head>
+<body>
+
+{% block header %}
+    <header>
+        <nav class="nav">
+            <div class="nav-img">
+                <a href=""><img src="{{url_for('static', filename='imgDetalleP/logo.png')}}" alt="Logo"></a>
+                <a href="" class="title_logo">ecommerce</a>
+            </div>
+            <div class="nav-search">
+                <div class="field" id="formulariodebusqueda">
+                    <input type="text" id="searchterm" placeholder="¿Que Producto estas buscando?">
+                    <button type="button" id="search">Buscar</button>
+                </div>
+            </div>
+            <div class="nav-sign">
+                <a href="/">Inicio</a>
+                <a href="/register">Registrarte</a>
+                <a href=""><i class="fas fa-cart-plus"></i></a>
+                <a href="/login"><i class="fas fa-user"></i></a>
+            </div>
+           
+        </nav>            
+    </header>
+{% endblock %}
+
+
+{% block main %}{% endblock %}
+
+{% block footer %}
+    <footer>
+       <div class="content_footer">
+           <div class="footer_body">
+                <div class="text">
+                    <h2>Politicas de privacidad</h2>
+                    <p>Terminos y condiciones</p>
+                    <p>Politica de devoluciones</p>
+                    <p>Politica de envios</p>
+                </div>
+           </div>
+           <div class="footer_body">
+               <div class="text">
+                   <h2>Contactanos</h2>
+                   <p>Servicio al cliente</p>
+                   <p>quejas y reclamos</p>
+                   <p>Quienes somos</p>
+               </div>
+            </div>
+            <div class="footer_body">
+               <div class="text">
+                   <h2>preguntas frecuentes</h2>
+                   <p>Como puedo hacer una compra</p>
+                   <p>como puedo completar mi registro</p>
+                   <p>como funciona la lista de deseos?</p>
+                   <p><a href="">Conatacto:  KendySoporteTecnico@ecommerce.com</a></p>
+               </div>
+            </div>
+            <div class="footer_body">
+                <div class="text">
+               <h2>Siguenos</h2>
+               <a href=""><i class="fab fa-facebook-square"></i></a>
+               <a href=""> <i class="fab fa-instagram"></i> </a>
+               <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+            </div>
+     </div>
+      
+    </footer>
+{% endblock %}
+
+</body>
+</html>

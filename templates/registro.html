@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/registro.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css')}}">
+      <!-- fuentes de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- contendor principal -->
+    <div class="container">
+        <div class="container_login">
+            <div class="content">
+                <div class="logo_text">
+                    <h2>Regístrate</h2>
+                </div>
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='imagenes/media_result_20210927_d2d9404f-982f-481a-bab1-26d155a77f04.png')}}" alt="">
+                </div>
+                <div class="formulario">
+                    <form action="" method="" class="form">
+                        <div class="form_inp">
+                            <input type="text" name="nombre" placeholder="Nombres">
+                            <input type="text" name="apellidos" placeholder="Apellidos">
+                            <input type="email" name="email" id="" placeholder="Correo elentrónico">
+                            <input type="password" name="password" id="" placeholder="Contraseña">
+                            
+                        </div>
+                        <div class="form_btn">
+                            <a href="" class="btn">Registro</a>
+
+                            <div class="form_link">
+                                <a href="/login" class="link_text">¿Ya tienes cuenta?</a><br>
+                                <a href="" class="link_text">Términos y Condiciones</a>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

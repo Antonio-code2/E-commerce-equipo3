@@ -1,0 +1,258 @@
+{% extends 'template.html' %}
+
+{% block head %}
+{{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/busqueda.css')}} ">
+{% endblock %}
+
+{% block main %}
+    <div class="wrap">
+        <div class="store-wrapper">
+
+            <div class="category_list">
+                
+                <div class="Price">
+                    <a href="#" class="price_item" price="all">PRECIO</a>
+                    <div class="Prices">
+                        <a href="#" class="price_item" price="Menos">-Menos de $1.000.000</a>
+                        <input type="checkbox" name="price" id="Menos">
+                    </div>
+                    <div class="Prices">
+                        <a href="#" class="price_item" price="Entre"> -De $1.000.000 a $2.000.000</a>
+                        <input type="checkbox" name="price" id="Entre">
+                    </div>
+                    <div class="Prices">
+                        <a href="#" class="price_item" price="Mas">-Más de $2.000.000</a>
+                        <input type="checkbox" name="price" id="Mas">
+                    </div>
+                </div>
+
+                <div class="Stars">
+                    <a href="#" class="Stars_item" price="all">CALIFICACIÓN</a>
+                    <div class="card_star_img">
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <input type="checkbox" name="star" id="one_start">
+                    </div>
+                    <div class="card_star_img">
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <input type="checkbox" name="star" id="two_start">
+                    </div>
+                    <div class="card_star_img">
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <input type="checkbox" name="star" id="three_start">
+                    </div>
+                    <div class="card_star_img">
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="far fa-star"></i></a>
+                        <input type="checkbox" name="star" id="four_start">
+                    </div>
+                    <div class="card_star_img">
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <a href="#" class="card-link"><i class="fas fa-star"></i></a>
+                        <input type="checkbox" name="star" id="five_start">
+                    </div>
+                </div>
+
+                <a href="#" class="category_item" category="all">CATEGORIAS</a>
+                <a href="#" class="category_item" category="Electrodomésticos">Electrodomésticos</a>
+                <a href="#" class="category_item" category="Electrónicos">Electrónicos</a>
+                <a href="#" class="category_item" category="Camping">Camping</a>
+                <a href="#" class="category_item" category="Juguetes">Juguetes</a>
+                <a href="#" class="category_item" category="Deportes">Deportes</a>
+                <a href="#" class="category_item" category="Zapatos">Zapatos</a>
+                <a href="#" class="category_item" category="Autos">Autos</a>
+                <a href="#" class="category_item" category="Ropa">Ropa</a>
+                <a href="#" class="category_item" category="Hogar">Hogar</a>
+            </div>
+
+            <section class="product_list">
+
+                <div class="product_item" category="Electrodomésticos" price="Entre">
+                    <div class="product_img">
+                        <img src=" {{ url_for('static', filename='imgbusqueda/micro.jpg')}}" alt="">
+                    </div>
+                    
+                    <div class="card-container">
+                        <div class="card-text">
+                            <a href="#">Microondas Nata</a>
+                            <a href="#">$1.500.000</a>
+                        </div>
+                        <div class="card-info">
+                            <a href="#" class="card-link">Ver Más</a>
+
+                            <div class="card_info_img">
+                            <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                            <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_item" category="Electrónicos" price="Menos">
+                    <div class="product_img">
+                        <img src=" {{ url_for('static', filename='imgbusqueda/audifonos.jpg')}}" alt="">
+                    </div>
+
+                    <div class="card-container">
+                        <div class="card-text">
+                            <a href="#">Audífonos Gamer</a>
+                            <a href="#">$200.000</a>
+                        </div>
+                        <div class="card-info">
+                            <a href="#" class="card-link">Ver Más</a>
+                            <div class="card_info_img">
+                                <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                                <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_item" category="Electrónicos" price="Entre">
+                    <div class="product_img">
+                        <img src=" {{ url_for('static', filename='imgbusqueda/xiaomi.jpg')}}" alt="">
+                    </div>
+                    
+                    <div class="card-container">
+                        <div class="card-text">
+                            <a href="#">Xiaomi Redmi Note 10 Pro </a>
+                            <a href="#">$1.300.000</a>
+                        </div>
+                        <div class="card-info">
+                            <a href="#" class="card-link">Ver Más</a>
+                            <div class="card_info_img">
+                                <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                                <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_item" category="Hogar" price="Entre">
+                    <div class="product_img">
+                        <img src=" {{ url_for('static', filename='imgbusqueda/5. cuchillos.jpg')}}" alt="">
+                    </div>
+
+                    <div class="card-container">
+                        <div class="card-text">
+                            <a href="#">Set de Cuchillos Tramontina Profesional</a>
+                            <a href="#">$1.500.000</a>
+                        </div>
+                        <div class="card-info">
+                            <a href="#" class="card-link">Ver Más</a>
+                            <div class="card_info_img">
+                                <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                                <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_item" category="Hogar" price="Menos">
+                    <div class="product_img">
+                        <img src=" {{ url_for('static', filename='imgbusqueda/6. termos.jpg')}}" alt="">
+                    </div>
+
+                    <div class="card-container">
+                        <div class="card-text">
+                            <a href="#">Termos Home</a>
+                            <a href="#">$500.000</a>
+                        </div>
+                        <div class="card-info">
+                            <a href="#" class="card-link">Ver Más</a>
+                            <div class="card_info_img">
+                                <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                                <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_item" category="Deportes" price="Menos">
+                    <div class="product_img">
+                        <img src=" {{ url_for('static', filename='imgbusqueda/8. termodepor.jpg')}}" alt="">
+                    </div>
+
+                    <div class="card-container">
+                        <div class="card-text">
+                            <a href="#">Termo cycle</a>
+                            <a href="#">$60.000</a>
+                        </div>
+                        <div class="card-info">
+                            <a href="#" class="card-link">Ver Más</a>
+                            <div class="card_info_img">
+                                <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                                <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_item" category="Deportes" price="Más">
+                    <div class="product_img">
+                        <img src="  {{ url_for('static', filename='imgbusqueda/bici.jpg')}}" alt="">
+                    </div>
+
+                    <div class="card-container">
+                        <div class="card-text">
+                            <a href="#">Bicicleta cycle</a>
+                            <a href="#">$2.500.000</a>
+                        </div>
+                        <div class="card-info">
+                            <a href="#" class="card-link">Ver Más</a>
+                            <div class="card_info_img">
+                                <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                                <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_item" category="Deportes" price="Entre">
+                    <div class="product_img">
+                        <img src=" {{ url_for('static', filename='imgbusqueda/boxeo.jpg ')}}" alt="">
+                    </div>
+
+                    <div class="card-container">
+                        <div class="card-text">
+                            <a href="#">Saco de Boxeo Hard</a>
+                            <a href="#">$2.100.000</a>
+                        </div>
+                        <div class="card-info">
+                            <a href="#" class="card-link">Ver Más</a>
+                            <div class="card_info_img">
+                                <a href="#" class="card-link"><i class="far fa-heart"></i></a>
+                                <a href="#" class="card-link"><i class="fas fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+<script src=" {{ url_for('static', filename='js/jquery-3.6.0.js')}}"></script>
+<script src="{{ url_for('static', filename='js/busqueda.js')}}"></script>
+{% endblock %}

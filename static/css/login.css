@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* estilos contenedor padre */
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+/* estilos contenedores hijos */
+.container_login{
+    background: #fff;
+    padding:20px;
+    margin: 50px auto;
+    display: block;
+    width: 430px;
+    height: auto;
+    border-right: 4px solid #428CB5;
+    border-bottom: 5px solid #428CB5;
+    box-shadow: -2px -1px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.content{
+    padding: 10px;
+}
+
+.logo{
+   text-align: center;
+}
+.logo_text{
+    text-align: center;
+    margin: 0 0 20px 0;
+    
+    color: #7D7575;
+}
+.logo_text h2{
+    margin: 0 0 10px 0;
+    font-size: 30px;
+}
+
+.logo img{
+    width: 100px;
+}
+
+
+
+/* estilos para el formulario */
+.form{
+    display: block;
+}
+.form .form_inp input{
+display: block;
+margin: 10px 0;
+width: 100%;
+border: none;
+background: #F2EDED;
+padding: 15px;
+border-top: 4px solid #428CB5;
+}
+input{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f007";
+    font-size: 15px;
+}
+input:focus{
+    outline-color: #428CB5;
+}
+
+
+/* estilos boton de login */
+.form_btn{
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+   
+}
+.form_btn .btn{
+    margin: 10px 0;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    background: #428CB5;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.form_link{
+    display: flex;
+    justify-content: space-between;
+}
+.form_link .link_text{
+    color: #428CB5;
+    text-decoration: none;
+}
+
+
+
+
+
+

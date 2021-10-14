@@ -1,0 +1,149 @@
+
+.main{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    width: 100%;
+}
+/*CARACTERÍSTICAS PADRE*/
+.padre {
+  height: 100%;
+  background-color: #A1D9E0;
+  margin: 10px 5px;
+}
+/*MODIFICA POSICIÓN DE LAS IMÁGENES DEL CARRUSEL*/
+.carousel-item img {
+    vertical-align: middle;
+    border-style: inset;
+    height: 161.33px;
+    border-style: inset;
+    margin: 25px;
+}
+
+/* TEXTO POLITICS*/
+div#politics {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+/* TEXTO CONTACTOS*/
+div#contact {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+/* TEXTO PREGUNTAS*/
+div#questions {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+/* TEXTO SIGUENOS*/
+div#redes {
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+/* TEXTOS DEBAJO DE TÍTULOS*/
+
+/*CONTENDORES*/
+ /*CAJA DE CATEGORÍAS*/
+.container_card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 10px
+}
+/*COLOR Y FUENTE DE CATEGORÍAS*/
+
+/*TITULO CATEGORÍAS*/
+label#categorías {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center; /*NO ME QUIERE CENTRAR*/
+    color: black;
+}
+
+/*SUBTITULO DE PRODUCTOS*/
+.cateProductos {
+    margin: 0 5px;
+    color: #8E8686;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: right; /*NO SE QUIERE CORRER EL TEXTO PARA QUE NO QUEDE A LA DERECHA*/
+}
+
+/*CONTENEDORES*/ 
+.contenedor{
+    width: 100%;
+    height: auto;
+    background-color: #DCD8B3;
+    border-radius: 16px;
+}
+
+.card-body{
+    margin: 10px;
+    height: 100px;
+}
+
+.ImagenProducto{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.ImagenProducto img{
+    width: 90%;
+    margin: 5px;
+    height: 100%;
+}
+
+/*titulo dentro de contenedor*/
+.card-title {
+    margin-bottom: .75rem;
+    color: black;
+    Size: 18px;
+    height: 20px;
+}
+
+.card-text {
+    margin-bottom: 0;
+    color: black;
+   font-size: 18px;
+    height: 20px;
+}
+
+.entradasContenedor{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.entradasContenedor .info a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #37A3BB;
+}
+
+.entradasContenedor .link-icon a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #37A3BB;
+}
+

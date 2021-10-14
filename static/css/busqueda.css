@@ -1,0 +1,132 @@
+
+
+
+
+
+.card_emoticones_img{
+    margin-right: 50px;
+}
+
+
+
+.wrap{
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+}
+
+.store-wrapper{
+    display: flex;
+}
+
+.category_list{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    align-items: center;
+    background: #FAF4C3;
+}
+
+.category_list .Price{
+    display: block;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.category_list .category_item{
+    display: block;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+
+/* Para sombrear el enlace seleccionado */
+.category_list .ct_item-active{
+	background: #e2e97e;
+}
+
+.category_list .Stars{
+    display: block;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.card_star_img .fa-star{
+    color: #FADC40
+}
+
+.product_list{
+    margin-top: 20px;
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product_list .product_item{
+    width: 100%;
+    height:150px;
+    margin-left: 3%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 6px 0px #DCD8B3;
+    border-radius: 16px;
+    display: flex;
+}
+
+.card-text{
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.product_img{
+    display: block;
+    width: 200px;
+    height: 100%;
+    justify-content: center;
+    margin-right: 15px;
+    
+}
+.product_img img{
+    width: 100%;
+}
+
+/* .product_list .product_item img{
+    overflow: hidden;
+    width: 50%;
+    height: 100px; 
+} */
+
+.product_list .product_item a{
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    background: #DCD8B3;
+    Color: black
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/* contenedor donde estan las imagenes de carrito y corazon, tambien boton de ver mas */
+.card-info{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.card-link .fa-heart, .fa-cart-plus{
+    color: #428CB5
+}
+
+.card_info_img{
+    display: flex;
+}
+
+
+

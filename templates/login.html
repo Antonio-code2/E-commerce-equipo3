@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css')}}">
+
+
+    <!-- iconos de fontawosome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+    <!-- fuentes de google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- contendor principal -->
+    <div class="container">
+        <div class="container_login">
+            <div class="content">
+                <div class="logo">
+                    <img src="{{url_for('static', filename='imgLogin/media_result_20210927_d2d9404f-982f-481a-bab1-26d155a77f04.png')}}" alt="">
+                    <div class="logo_text">
+                        <h2>E-Commerce</h2>
+                        <h4>Iniciar sesion en tu cuenta</h4>
+                    </div>
+                </div>
+                <div class="formulario">
+                    <form action="" method="" class="form">
+                        <div class="form_inp">
+                            <input type="email" name="email" id="" placeholder=" correo elentronico">
+                            <input type="password" name="password" id="" placeholder=" contraseña">
+                        </div>
+                        <div class="form_btn">
+                            <a href="/login" class="btn">Login</a>
+
+                            <div class="form_link">
+                                <a href="/register" class="link_text">Crea una cuenta</a>
+                                <a href="" class="link_text">¿Olvidaste tu contraseña?</a>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+# ruta para la pagina de inicio o principal
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+#ruta para el login de acceso
+@app.route('/login')
+def login():
+    title = 'Iniciar sesion'
+    return render_template('login.html', title=title)
+
+#ruta para el formulario de registro
+@app.route('/register')
+def registe():
+    title = "crea una cuenta"
+    return render_template('registro.html', title=title)
+
+
+#ruta para la vista de un producto seleccionado
+@app.route('/producto')
+def producto():
+    return render_template('DetalleProducto.html')
+
+
+# interfaz de administracion en pruebas
+@app.route('/administracion')
+def admin():
+    return render_template('admin/admbase.html')
+
+#ruta para la vista de la tabla de productos
+@app.route('/productos')
+def product_admin():
+    return render_template('admin/productos.html')

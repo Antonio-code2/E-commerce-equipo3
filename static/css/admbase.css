@@ -1,0 +1,183 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FEFFD2;
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: #428CB5;
+    position: fixed;
+    z-index: 2;
+
+}
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header_content .title h1{
+    color: #fff;
+}
+
+.header_content .perfil{
+    display: flex;
+    font-size: 20px;
+    line-height: 50px;
+}
+.header_content .perfil h3{
+ margin-right: 20px;
+ color: #fff;
+   
+}
+.header_content .perfil .fa-user{
+    font-size: 40px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+/* aside */
+.aside{
+    display: block;
+    background: #fff;
+    margin-top: 100px;
+
+   
+}
+.nav{
+   
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background: #ffffff;
+    height: 100%; /* Full height */
+    position: fixed;
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+
+}
+.nav ul{
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;}
+
+ .item a{
+   
+    padding: 10px;
+    margin: 20px 0;
+    display: block;
+}
+.item a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #0b0c0c;
+    font-weight: 900;
+
+}
+.item a .fa-home{
+    font-size: 50px;
+    color: #428CB5;
+    margin: 10px;
+}
+.item a .fa-truck{
+    font-size:40px ;
+    color: #428CB5;
+    margin: 10px;
+}
+.item a .fa-user{
+    font-size:55px ;
+    color: #428CB5;
+    margin: 10px;
+}
+.item .active{
+    color: #428CB5;
+}
+
+
+
+
+/* main  */
+
+.main{
+    grid-area: main;
+    padding: 20px;
+    margin: 10px 100px;
+    background: #fff;
+}
+
+
+/* tabla de administracion de productos */
+
+.container-table{
+    margin-top: 50px;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.table{
+    border: 1px solid #8d9292;
+    width: 100%;
+    height: 50px;
+}
+thead{
+    width: 100%;
+}
+.head-table{
+    padding: 20px;
+    background: #F5EA7E;
+    display: flex;
+    justify-content: space-between;
+}
+.head-table a{
+    line-height: 30px;
+    background: #428CB5;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.table-body tr{
+    border: 1px solid #0b0c0c;
+}
+.table-body tr .img_product{
+    background: #8d9292;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+}
+.table-body tr .img_product p{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+.table-body .datos th{
+    border: 1px solid #c1c2c2;
+}
+.iconos{
+
+text-align: center;
+}
+.iconos a{
+    text-decoration: none;
+}
+.iconos a .fa-edit, .fa-trash{
+    font-size: 30px;
+    margin: 5px;
+    color: #0b0c0c;
+}
