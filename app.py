@@ -9,7 +9,8 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():# acciones => registrarse o iniciar sesion
-    return render_template('index.html')
+    title = 'e-commerce | inicio'
+    return render_template('index.html', title=title)
 
 
 # ruta para el login de acceso
@@ -45,14 +46,16 @@ def buscar_producto():
 
 @app.route('/user_admin')
 def user_admin():
-    return render_template('admin/dashadmin.html')
+    title = 'tu perfil | e-commerce'
+    return render_template('admin/dashadmin.html', title=title)
 
 # interfaz de administracion en pruebas
 @app.route('/administracion')
 def admin():
     usuario = 'administrador' # si tiene un rol diferente pero de administracion mostrara el mensaje con dicho rol
     mensaje = 'Hola ' + usuario + ' Bienvenidos a la interfaz de administracion, aqui podras administrar los productos, usuarios y roles'
-    return render_template('admin/admbase.html', mensaje=mensaje, usuario=usuario)
+    title = 'Administracion | e-commerce'
+    return render_template('admin/admbase.html', mensaje=mensaje, usuario=usuario, title=title)
 
 # ruta para la vista de la tabla de productos
 
@@ -60,7 +63,8 @@ def admin():
 @app.route('/table-product')
 def product_admin():
     mensaje = 'administracion de la tabla de productos'
-    return render_template('admin/table_product.html', mensaje=mensaje)
+    title = 'Administracion | productos'
+    return render_template('admin/table_product.html', mensaje=mensaje, title=title)
 
 
 # ejecutable del la aplicacion
