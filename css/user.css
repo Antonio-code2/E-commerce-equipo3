@@ -1,0 +1,149 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    width:100%; /* Establecemos que el header abarque el 100% del documento */
+      overflow:hidden; /* Eliminamos errores de float */
+      background:#F5EA7E;
+      margin-bottom:15px;
+  }
+  
+  header .encabezado {
+    width:100%; /* Establecemos que el header abarque el 100% del documento */
+      overflow:hidden; /* Eliminamos errores de float */
+      background:#F5EA7E;
+      margin-bottom:20px;
+  }
+  
+  .InicioyRegistro {
+    width:100%; /* Establecemos que el ancho sera del 90% */
+      max-width:650px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+      margin:auto; /* Centramos los elementos */
+      overflow:hidden; /* Eliminamos errores de float */
+  }
+  
+  header .encabezado .presentacion .logo img {
+      color:#F5EA7E;
+    width: 15%;
+      float:left;
+  }
+  header .carrito img {
+    position: absolute;
+    width: 25px;
+    left: 88.57%;
+    right: 4.83%;
+    top: 6.7%;
+    bottom: 72.02%;
+    overflow:hidden;
+  }
+  
+  header .avatar img {
+    position: absolute;
+    width: 20px;
+    left: 93.17%;
+    right: 5.83%;
+    top: 6.6%;
+    bottom: 72.02%;
+    overflow:hidden;
+  }
+  
+  header nav {
+      float:right;
+      line-height:100px;
+  }
+  
+  header nav a {
+      display:inline-block;
+      color:rgba(2, 2, 1, 0.698);
+      text-decoration:none;
+      padding:10px 20px;
+      line-height:normal;
+      font-size:20px;
+    font-family: sans-serif;
+      -webkit-transition:all 500ms ease;
+      -o-transition:all 500ms ease;
+      transition:all 500ms ease;
+  }
+  
+  .field {
+    display:flex;
+    position:absolute; top: -30px; left: 400px;
+    margin:3.5em auto;
+    width:30%;
+    flex-direction:row;
+    box-shadow: 1px 1px 0 rgb(25, 112, 211),
+  
+  }
+  
+  .field>input[type=text],
+  .field>button {
+    display:block;
+    font-size: 25px;
+    font:1.2em 'sans-serif';
+  }
+  
+  .field>input[type=text] {
+    flex:1;
+    padding:0.4em;
+    font-family: sans-serif;
+    font-size: 15px;
+    border:0.2em solid rgb(63, 129, 184);
+    color: #000;
+  }
+  
+  .field>button[type=button] {
+    padding:0.6em 0.8em;
+    background: #428CB5;
+    font-family: sans-serif;
+    color: #fff;
+  }
+  
+  body {
+    width:100%;
+    background-color: #E5E5E5;;
+  }
+
+
+  .section{
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      grid-gap: 30px;
+  }
+  .aside{
+      margin: 10px;
+      text-align: center;
+  }
+  .nav_user{
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+  }
+  .nav_user_img{
+      display: flex;
+      justify-content: center;
+      background: rgb(156, 154, 154);
+      border-radius: 50%;
+      padding: 50px;
+      width: 200px;
+      margin: auto;
+  }
+  .nav_user_img img{
+      width: 100px;
+  }
+  .nav_user_btn{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .navi{
+      list-style: none;
+  }
+  .navi li a{
+      background: rgb(156, 154, 154);
+      padding: 20px;
+      margin:20px 0;
+      display: block;
+  }
