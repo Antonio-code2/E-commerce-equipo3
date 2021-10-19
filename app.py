@@ -62,6 +62,11 @@ def product_admin():
     mensaje = 'administracion de la tabla de productos'
     return render_template('admin/table_product.html', mensaje=mensaje)
 
+@app.route('/perfil', methods=['GET', 'POST'])
+def perfil_user():
+    return render_template('perfil.html')
+
+
 
 # ejecutable del la aplicacion
 if __name__ == "__main__":
