@@ -120,6 +120,11 @@ def product_admin():
     mensaje = 'administracion de la tabla de productos'
     return render_template('admin/table_product.html', mensaje=mensaje)
 
+@app.route('/perfil', methods=['GET', 'POST'])
+def perfil_user():
+    return render_template('perfil.html')
+
+
 
 # rutas para publicar post/productos y editar post/productos
 @app.route('/admin/post/', methods=['GET', 'POST'], defaults={'post_id': None})
