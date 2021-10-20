@@ -22,18 +22,20 @@
           </div>
         </div>
       </div>
-
+  
+{% block content %}
       <div class="container_card">
-
+    
 <!-- CONTENEDOR DE AUDIFONOS -->
+{% for post in posts %}
         <div class="contenedor"> 
             <div class= "ImagenProducto">
              <a href="/producto"><img src="{{url_for('static', filename='img/audifonos.jpg')}}" ></a>
             </div>
               <div class="card-body">
               <div class="productoTitulo">
-                <h5 class="card-title">Audifonos Gamer</h5>
-                <p class="card-text">$50.000</p>
+                <h5 class="card-title">{{ post.title }}</h5>
+                <p class="card-text">{{ post.precio }}</p>
               </div>
 
               <div class="entradasContenedor">
@@ -48,8 +50,11 @@
               </div>
         </div>
 
+        
+        {% endfor %}
+
 <!-- CONTENEDOR DE HORNO -->
-        <div class="contenedor"> 
+        <!-- <div class="contenedor"> 
           <div class= "ImagenProducto">
             <img src=" {{url_for('static', filename='img/micro.jpg ')}}" >
           </div>
@@ -69,10 +74,10 @@
               </div>
             </div>
             </div>
-      </div>
+      </div> -->
 
 <!-- CONTENEDOR DE BOXEO -->
-      <div class="contenedor"> 
+      <!-- <div class="contenedor"> 
         <div class= "ImagenProducto">
           <img src=" {{url_for('static', filename='img/boxeo.jpg')}}" >
         </div>
@@ -92,10 +97,10 @@
             </div>
           </div>
           </div>
-    </div>
+    </div> -->
 
 <!-- CONTENEDOR DE BICICLETA-->
-    <div class="contenedor"> 
+    <!-- <div class="contenedor"> 
       <div class= "ImagenProducto">
         <img src=" {{url_for('static', filename='img/bici.jpg')}}" >
       </div>
@@ -115,11 +120,11 @@
           </div>
         </div>
         </div>
-  </div>
+  </div> -->
 
 <!-- CONTENEDOR DE CUCHILLOS-->
 
-  <div class="contenedor"> 
+  <!-- <div class="contenedor"> 
     <div class= "ImagenProducto">
       <img src="  {{url_for('static', filename='img/5. cuchillos.jpg')}}" >
     </div>
@@ -138,10 +143,10 @@
         </div>
       </div>
       </div>
-      </div>
+      </div> -->
 
 <!-- CONTENEDOR DE TERMOS-->
-      <div class="contenedor"> 
+      <!-- <div class="contenedor"> 
         <div class= "ImagenProducto">
           <img src=" {{url_for('static', filename='img/6. termos.jpg ')}}" >
         </div>
@@ -161,10 +166,10 @@
             </div>
           </div>
           </div>
-      </div>
+      </div> -->
 
 <!-- CONTENEDOR DE CELULAR-->
-      <div class="contenedor"> 
+      <!-- <div class="contenedor"> 
         <div class= "ImagenProducto">
           <img src=" {{url_for('static', filename='img/xiaomi.jpg')}}" >
         </div>
@@ -184,10 +189,10 @@
             </div>
           </div>
           </div>
-      </div>
+      </div> -->
 
 <!-- CONTENEDOR DE TERMO DEPORTIVO-->
-      <div class="contenedor"> 
+      <!-- <div class="contenedor"> 
         <div class= "ImagenProducto">
           <img src="  {{url_for('static', filename='img/8. termodepor.jpg')}}" >
         </div>
@@ -207,8 +212,9 @@
             </div>
           </div>
           </div>
+      </div> -->
       </div>
-      </div>
-</div>
 
+      {% endblock %}
+</div>
 {% endblock %}

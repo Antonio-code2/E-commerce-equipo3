@@ -1,0 +1,7 @@
+ULTIMOS CAMBIOS EN LA APLICACION
+
+1.se agrego dos nuevos archivos python, uno es para controlar los formularios y el otro para controlar las sesiones o usuarios
+
+2. se descargaron varias liberias que estan en la carpeta lib, librerias necesarias para el tema de los formularios y sesiones
+
+3.

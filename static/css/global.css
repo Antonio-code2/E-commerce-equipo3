@@ -37,7 +37,7 @@
       line-height: 100px;
   }
   .nav .nav-sign a{
-      font-size: 30px;
+      font-size: 20px;
       text-decoration: none;
       margin: 0 10px;
       color: rgb(82, 80, 80);
@@ -99,4 +99,16 @@
 .text .fa-facebook-square, .fa-instagram, .fa-youtube{
   font-size: 60px;;
   margin: 5px;
+}
+
+.sub_footer{
+  background: #000;
+
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.sub_footer a{
+  color: #fff;
+  text-decoration: none;
 }
