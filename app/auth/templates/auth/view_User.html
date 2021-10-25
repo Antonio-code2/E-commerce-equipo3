@@ -1,0 +1,70 @@
+{% extends 'template.html' %} 
+
+{% block head %} 
+{{ super() }}
+  <link rel="stylesheet" href="{{url_for('static', filename='css/user.css')}}">
+{% endblock %} 
+
+{% block main %}
+    <section class="section_user">
+
+        <aside class="aside_user">
+            <div class="nav_user">
+                <div class="nav_user_img">
+                    <img src=" {{ url_for('static', filename='imagenes/user-solid.svg')}}" alt="">
+                   
+                </div>
+                <h2>{{ current_user.name }}</h2>
+                <div class="nav_user_btn">
+                    <ul class="navi">
+                        <li><a href="{{ url_for('public.index') }}" class="nav-item">Ver tienda</a></li>
+                        <li><a href="#" class="nav-item">Tu cuenta</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+
+        <div class="main_user">
+
+            <div class="user_welcome">
+                <h1>Hola, {{ current_user.name }} estas en tu lista de deseos</h1>
+            </div>
+            <div class="container-table-user">
+               <table class="table">
+                        <div class="cabecera">
+                            <h2>Lista de deseos</h2>
+                            <a href="">agregar productos</a>
+                        </div>
+                   <tbody class="tbody">
+                    <tr class="item">
+                        <th>imagen del producto</th>
+                        <th>detalles</th>
+                        <th>cantidad</th>
+                        <th>acciones</th>
+                    </tr>
+                   <tr class="item-content">
+                       <th>
+                           <div class="th_img">
+                               imagen
+                           </div>
+                       </th>
+                       <th>
+                           <p>nombre del producto</p>
+                           <p>precio</p>
+                           <p>disponibilidad</p>
+                       </th>
+                       <th>
+                           <input type="number" name="cantidad" id="cantidad">
+                       </th>
+                       <th>
+
+                       </th>
+                   </tr>
+                  
+                   </tbody>
+               </table>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'admin/admbase.html' %}
+
+
+{% block main %}
+<h1>{{ mensaje }}</h1> 
+
+<div class="form">
+    <form action="" method="post" novalidate class="formulario">
+        {{ form.hidden_tag() }}
+        <div class="form_input">
+            {{ form.title.label }}
+            {{ form.title(size=128) }}<br>
+            {% for error in form.title.errors %}
+            <span style="color: rgb(156, 74, 74);">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div class="form_input">
+            {{ form.precio.label }}
+            {{ form.precio }}<br>
+            {% for error in form.precio.errors %}
+            <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div class="form_input">
+            {{ form.title_slug.label }}
+            {{ form.title_slug }}<br>
+            {% for error in form.title_slug.errors %}
+            <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div class="form_input">
+            {{ form.content.label }}
+            {{ form.content }}<br>
+            {% for error in form.content.errors %}
+            <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div class="btn">
+            {{ form.submit() }}
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,103 @@
+
+ 
+
+  .section_user{
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      grid-gap: 20px;
+  }
+  .aside_user{
+      margin: 10px;
+      text-align: center;
+  }
+  .nav_user{
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+  }
+  .nav_user_img{
+      display: flex;
+      justify-content: center;
+      background: rgb(156, 154, 154);
+      border-radius: 50%;
+      padding: 50px;
+      width: 200px;
+      margin: auto;
+  }
+  .nav_user_img img{
+      width: 100px;
+  }
+  .nav_user_btn{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .navi{
+      list-style: none;
+  }
+  .navi li a{
+      background: rgb(156, 154, 154);
+      padding: 20px;
+      margin:20px 0;
+      display: block;
+      text-decoration: none;
+      color: #fff;
+  }
+
+  .user_welcome{
+    width: 100%;
+    margin: 20px;
+  }
+  .user_welcome h1{
+    font-size: 40px;
+  }
+
+
+  /* tabla de la lista de deseos */
+  .container-table-user{
+    margin-top: 50px;
+    max-height: 500px;
+    overflow: scroll;
+    background: #fff;
+  }
+
+  .table{
+    width: 100%;
+  }
+  .cabecera{
+    width: 100%;
+    background: rgb(29, 123, 247);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .cabecera h2{
+    color: #fff;
+  }
+  .cabecera a{
+    padding: 10px;
+    background: #fff;
+    color: black;
+    text-decoration: none;
+  }
+  .tbody .item th{
+    border-bottom: 1px solid rgb(168, 164, 164);
+  
+  }
+  .tbody .item-content th{
+    padding: 15px;
+  }
+  .tbody th .th_img{
+    background: rgb(105, 104, 104);
+    padding: 15px;
+    height: 100px;
+    text-align: center;
+  }
+
+
+.table-body-user th input[type=number]::-webkit-inner-spin-button, 
+.table-body-user th input[type=number]::-webkit-outer-spin-button { 
+  margin: 0; 
+  padding: 10px;
+}
