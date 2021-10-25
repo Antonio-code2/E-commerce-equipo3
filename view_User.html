@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-commerce | Usuarios</title>
     <link rel="stylesheet" href="css/user.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
 
@@ -48,8 +50,6 @@
                     <ul class="navi">
                         <li><a href="#" class="nav-item">Tu cuenta</a></li>
                         <li><a href="#" class="nav-item">Lista de deseos</a></li>
-                        <li><a href="#" class="nav-item">ver carrito</a></li>
-                        <li><a href="#" class="nav-item">configuracion</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,8 +57,47 @@
 
 
         <div class="main">
-            <!-- Aqui ira la lista de deseos y el carrito de compras -->
-            <h1>contenido</h1>
+            <div class="container-table">
+                <table class="table">
+                    <thead>
+                        <div class="head-table">
+                            <h2>Lista de deseos</h2>
+                            <a href="/" class="btn"><i class="fas fa-plus"></i>  Agregar productos</a>
+                        </div>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr class="datos">
+                            <th>imagen</th>
+                            <th>Detalles</th>
+                            <th>cantidad</th>
+                            <th>acciones</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="img_product">
+                                    <p>Imgane del producto</p>
+                                </div>
+                            </th>
+
+                            <th>
+                                <div class="detail_product">
+                                    <h3>Nombre del producto</h3>
+                                    <h3>precio</h3>
+                                    <h3>disponibilidad</h3>
+                                </div>
+                            </th>
+
+                            <th>
+                               <input type="number" name="cantidad" id="cantidad" aria-controls="hidden">
+                            </th>
+                            <th class="iconos">
+                                <a href=""><i class="fas fa-trash"></i></a>
+                            </th>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
     

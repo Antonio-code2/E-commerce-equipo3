@@ -110,7 +110,7 @@
   .section{
       display: grid;
       grid-template-columns: 300px 1fr;
-      grid-gap: 30px;
+      grid-gap: 20px;
   }
   .aside{
       margin: 10px;
@@ -147,3 +147,76 @@
       margin:20px 0;
       display: block;
   }
+
+
+  /* tabla de la lista de deseos */
+  .container-table{
+    margin-top: 50px;
+    max-height: 500px;
+    overflow: scroll;
+    background: #fff;
+    margin: 10px;
+}
+
+.table{
+    border: 1px solid #8d9292;
+    width: 100%;
+    height: 50px;
+}
+thead{
+    width: 100%;
+}
+.head-table{
+    padding: 20px;
+    background: #F5EA7E;
+    display: flex;
+    justify-content: space-between;
+}
+.head-table a{
+    line-height: 30px;
+    background: #428CB5;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.table-body tr{
+    border: 1px solid #0b0c0c;
+}
+.table-body tr .img_product{
+    background: #8d9292;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+}
+.table-body tr .img_product p{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+.table-body .datos th{
+    border: 1px solid #c1c2c2;
+}
+.iconos{
+
+text-align: center;
+}
+.iconos a{
+    text-decoration: none;
+}
+.iconos a .fa-edit, .fa-trash{
+    font-size: 30px;
+    margin: 5px;
+    color: #0b0c0c;
+}
+.table-body th input{
+  padding: 10px;
+}
+
+.table-body th input[type=number]::-webkit-inner-spin-button, 
+.table-body th input[type=number]::-webkit-outer-spin-button { 
+  margin: 0; 
+  padding: 10px;
+}
