@@ -4,13 +4,13 @@ from sqlalchemy.exc import IntegrityError
 
 from app import db
 
-class Post(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+class productos(db.Model):
+    id_producto = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('Usuarios.id', ondelete='CASCADE'), nullable=False)
     title = db.Column(db.String(256), nullable=False)
     precio = db.Column(db.String, nullable=False)
     title_slug = db.Column(db.String(256), unique=True, nullable=False)
-    content = db.Column(db.Text)
+    descripcion = db.Column(db.Text)
 
     def __repr__(self):
         return f'<Post {self.title}>'
@@ -36,8 +36,8 @@ class Post(db.Model):
 
     @staticmethod
     def get_by_slug(slug):
-        return Post.query.filter_by(title_slug=slug).first()
+        return productos.query.filter_by(title_slug=slug).first()
 
     @staticmethod
     def get_all():
-        return Post.query.all()
+        return productos.query.all()

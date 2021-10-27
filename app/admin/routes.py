@@ -1,7 +1,7 @@
 from flask import render_template, redirect, url_for
 from flask_login import login_required, current_user
 
-from app.models import Post
+from app.models import productos
 from . import admin_bp
 from .forms import PostForm
 
@@ -19,9 +19,9 @@ def post_form(post_id):
         # photo.save(app.root_path+"/static/productos/"+filename)
         title = form.title.data
         precio = form.precio.data
-        content = form.content.data
+        descripcion = form.descripcion.data
 
-        post = Post(user_id=current_user.id, title=title, precio=precio, content=content)
+        post = productos(user_id=current_user.id, title=title, precio=precio, descripcion=descripcion)
         post.save()
 
         return redirect(url_for('public.index'))

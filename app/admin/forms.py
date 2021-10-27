@@ -9,5 +9,5 @@ class PostForm(FlaskForm):
     title = StringField('Titulo', validators=[DataRequired()])
     title_slug = StringField('Titulo slug', validators=[Length(max=128)])
     precio = StringField('precio')
-    content = TextAreaField('Descripcion del producto')
+    descripcion = TextAreaField('Descripcion del producto')
     submit = SubmitField('enviar')

@@ -6,7 +6,7 @@ from wtforms.validators import DataRequired, Email, Length
 
 # clase para el formulario de registro, aun en desarrollo, utilizando wtf-formularios.
 class SignupForm(FlaskForm):
-    name = StringField('nombre', validators=[DataRequired()], render_kw={
+    nombre = StringField('nombre', validators=[DataRequired()], render_kw={
                        'placeholder': 'Nombre', })
     apellido = StringField('apellido', validators=[DataRequired()], render_kw={
         'placeholder': 'apellido', })

@@ -18,7 +18,7 @@ def show_signup_form():
     form = SignupForm()  # instancia de la clase signupform
     error = None
     if form.validate_on_submit():
-        name = form.name.data
+        nombre = form.nombre.data
         apellido = form.apellido.data
         email = form.email.data
         password = form.password.data
@@ -29,7 +29,7 @@ def show_signup_form():
         else:
 
         # creamos el usuario y lo guardamos
-            user = User(name=name, email=email, apellido=apellido)
+            user = User(nombre=nombre, email=email, apellido=apellido)
             user.set_password(password)
             user.save()
         # dejamos el usuario logueado
