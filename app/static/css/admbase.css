@@ -133,6 +133,7 @@ body{
     margin-top: 50px;
     max-height: 500px;
     overflow: scroll;
+    width: 900px;
 }
 
 .table{
@@ -239,4 +240,27 @@ text-align: center;
     background: #428CB5;
     border: none;
     color: #fff;
+}
+
+
+
+
+/* estilos para el formulario de ver usuario */
+.user_form{
+    width: 1000px;
+}
+
+.user_form input[type=submit]{
+    padding: 10px;
+    width: 150px;
+    margin: 10px;
+    background: #428CB5;
+    border: none;
+    color: #fff;
+}
+.user_form p{
+    margin: 10px;
+}
+.user_form label{
+    margin: 10px;
 }

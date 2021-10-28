@@ -1,3 +1,4 @@
+from os import error
 from flask import url_for
 from slugify import slugify
 from sqlalchemy.exc import IntegrityError
@@ -13,10 +14,10 @@ class productos(db.Model):
     descripcion = db.Column(db.Text)
 
     def __repr__(self):
-        return f'<Post {self.title}>'
+        return f'<productos {self.title}>'
 
     def save(self):
-        if not self.id:
+        if not self.id_producto:
             db.session.add(self)
         if not self.title_slug:
             self.title_slug = slugify(self.title)
@@ -31,8 +32,15 @@ class productos(db.Model):
                 count += 1
                 self.title_slug = f'{self.title_slug}-{count}'
 
-    def public_url(self):
-        return url_for('public.post_view', slug=self.title_slug)
+    def delete(self):
+        db.session.delete(self)
+        db.session.commit()
+
+    @staticmethod
+    def get_by_id(id):
+        return productos.query.get(id)
+
+        
 
     @staticmethod
     def get_by_slug(slug):
@@ -41,3 +49,10 @@ class productos(db.Model):
     @staticmethod
     def get_all():
         return productos.query.all()
+
+    # @staticmethod
+    # def all_paginated(page=1, per_page=20):
+    #     return productos.query.order_by(productos.created.asc()).\
+    #     paginate(page=page, per_page=per_page, error_out=False)
+
+        

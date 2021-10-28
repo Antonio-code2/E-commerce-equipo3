@@ -18,9 +18,6 @@
             <div class="title">
                 <h1>Perfil de administrador</h1>
             </div>
-            <div>
-                <label for=""></label>
-            </div>
         </div>
     </header>
 
@@ -29,7 +26,7 @@
             <div class="menu">
                 <div class="usuario">
                     <img src="{{ url_for('static', filename='imagenes/imagenesdashboard/user-solid.svg')}}">
-                    <h3>Nombre de usuario</h3>
+                    <h3>{{ current_user.nombre }}</h3>
                 </div>
                 <div class="boton">
                     <a href="">
@@ -45,7 +42,7 @@
                 Administrado...</h1>
         
             <div class="botones">
-                <a href="/administracion">
+                <a href="{{ url_for('admin.admin') }}">
                     Administracion
                 </a>
 

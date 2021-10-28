@@ -5,8 +5,16 @@
 <h1>{{ mensaje }}</h1> 
 
 <div class="form">
-    <form action="" method="post" novalidate class="formulario">
+    <form action="" method="POST" enctype="multipart/form-data" novalidate class="formulario">
         {{ form.hidden_tag() }}
+
+        <div>
+            {{ form.post_image.label }}
+            {{ form.post_image }}<br>
+            {% for error in form.post_image.errors %}
+            <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </div>
         <div class="form_input">
             {{ form.title.label }}
             {{ form.title(size=128) }}<br>
@@ -39,5 +47,17 @@
             {{ form.submit() }}
         </div>
     </form>
+
+    <!-- para eliminar el post  -->
+    {% if post %}
+    <form action="{{ url_for('admin.delete_post', post_id=post.id_producto) }}" novalidate method="post">
+        <input type="submit" value="Eliminar" style=" padding: 10px;
+        width: 150px;
+        margin: 10px;
+        background: #428CB5;
+        border: none;
+        color: #fff;" >
+    </form>
+    {% endif %}
 </div>
 {% endblock %}

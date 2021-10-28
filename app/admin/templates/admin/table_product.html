@@ -9,138 +9,49 @@
         <thead>
             <div class="head-table">
                 <h2>administracion de productos</h2>
-                <a href="/admin/post/" class="btn"><i class="fas fa-plus"></i>  Agregar productos</a>
+                <a href="{{url_for('admin.post_form')}}" class="btn"><i class="fas fa-plus"></i>  Agregar productos</a>
             </div>
         </thead>
         <tbody class="table-body">
             <tr class="datos">
-                <th>imagen</th>
                 <th>id_producto</th>
+                <th>nombre</th>
                 <th>Descripcion</th>
                 <th>Disponibilidad</th>
                 <th>Precio</th>
                 <th>acciones</th>
             </tr>
+            {% for post in posts %} 
             <tr>
                 <th>
+                    {{ post.id_producto }}
+                </th>
+                   <!-- <th>
                     <div class="img_product">
                         <p>Imgane del producto</p>
                     </div>
-                </th>
-
-                <th>Codigo del producto</th>
-
+                </th> -->
                 <th>
-                    Descripcion del producto
+                    {{ post.title }}
+                </th>
+                <th>
+                    <textarea disabled style=" width: 200px; resize: none; padding: 10px;">
+                        {{ post.descripcion }}
+                    </textarea>
+                  
                 </th>
                 <th>Disponible</th>
-                <th>$$ precio</th>
+                <th>{{ post.precio }}</th>
                 <th class="iconos">
-                    <a href=""><i class="fas fa-edit"></i></a>
-                    <a href=""><i class="fas fa-trash"></i></a>
+                    <a href="{{ url_for('admin.actualizar_post', post_id=post.id_producto) }}" style="text-decoration: none; color: black;"><i class="fas fa-edit"></i></a>
+                    {% if post %}
+                    <a href="{{ url_for('admin.delete_post', post_id=post.id_producto) }}"><i class="fas fa-trash"></i></a>
+                    {% endif %}
                 </th>
             </tr>
-
-            <tr>
-                <th>
-                    <div class="img_product">
-                        <p>Imgane del producto</p>
-                    </div>
-                </th>
-
-                <th>Codigo del producto</th>
-
-                <th>
-                    Descripcion del producto
-                </th>
-                <th>Disponible</th>
-                <th>$$ precio</th>
-                <th class="iconos">
-                    <a href=""><i class="fas fa-edit"></i></a>
-                    <a href=""><i class="fas fa-trash"></i></a>
-                </th>
-            </tr>
-
-            <tr>
-                <th>
-                    <div class="img_product">
-                        <p>Imgane del producto</p>
-                    </div>
-                </th>
-
-                <th>Codigo del producto</th>
-
-                <th>
-                    Descripcion del producto
-                </th>
-                <th>Disponible</th>
-                <th>$$ precio</th>
-                <th class="iconos">
-                    <a href=""><i class="fas fa-edit"></i></a>
-                    <a href=""><i class="fas fa-trash"></i></a>
-                </th>
-            </tr>
-
-            <tr>
-                <th>
-                    <div class="img_product">
-                        <p>Imgane del producto</p>
-                    </div>
-                </th>
-
-                <th>Codigo del producto</th>
-
-                <th>
-                    Descripcion del producto
-                </th>
-                <th>Disponible</th>
-                <th>$$ precio</th>
-                <th class="iconos">
-                    <a href=""><i class="fas fa-edit"></i></a>
-                    <a href=""><i class="fas fa-trash"></i></a>
-                </th>
-            </tr>
-
-            <tr>
-                <th>
-                    <div class="img_product">
-                        <p>Imgane del producto</p>
-                    </div>
-                </th>
-
-                <th>Codigo del producto</th>
-
-                <th>
-                    Descripcion del producto
-                </th>
-                <th>Disponible</th>
-                <th>$$ precio</th>
-                <th class="iconos">
-                    <a href=""><i class="fas fa-edit"></i></a>
-                    <a href=""><i class="fas fa-trash"></i></a>
-                </th>
-            </tr>
-
-
-            <tr>
-                <th>
-                    <div class="img_product">
-                        <p>Imgane del producto</p>
-                    </div>
-                </th>
-
-                <th>Codigo del producto</th>
-
-                <th>
-                    Descripcion del producto
-                </th>
-                <th>Disponible</th>
-                <th>$$ precio</th>
-                <th class="iconos">
-                    <a href=""><i class="fas fa-edit"></i></a>
-                    <a href=""><i class="fas fa-trash"></i></a>
-                </th>
-            </tr>
+            {% endfor %}
+         
+           
         </tbody>
     </table>
     </div>

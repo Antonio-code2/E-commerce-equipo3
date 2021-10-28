@@ -1,0 +1,57 @@
+{% extends 'admin/admbase.html' %}
+
+{% block main %}
+<div class="container-table">
+    <table class="table">
+        <thead>
+            <div class="head-table">
+                <h2>administracion de usuarios</h2>
+            </div>
+        </thead>
+        <tbody class="table-body">
+            <tr class="datos">
+                <th>id usuario</th>
+                <th>Usuario</th>
+                <th>apellido</th>
+                <th>email</th>
+                <th>status</th>
+                <th>acciones</th>
+            </tr>
+            {% for user in users %} 
+            <tr>
+                <th>
+                    {{ user.id }}
+                </th>
+                <th>
+                  <a href="#" style="text-decoration: none; color: black;">{{ user.nombre }}</a>
+                  
+                </th>
+                <th>
+                    {{ user.apellido}}
+                </th>
+                <th>
+                    {{ user.email }}
+                </th>
+
+                <th>
+                    {{user.id_admin}}
+                </th>
+             
+                <th class="iconos">
+                    <a href="{{ url_for('admin.update_user_form', user_id=user.id) }}" style="text-decoration: none; color: black;"><i class="fas fa-edit"></i></a>
+            
+                    <a href=""><i class="fas fa-trash"></i></a>
+                 
+                </th>
+            </tr>
+            {% endfor %}
+         
+           
+        </tbody>
+    </table>
+    </div>
+
+
+
+
+{% endblock %}

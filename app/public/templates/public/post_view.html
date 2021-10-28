@@ -33,7 +33,9 @@
     <article>
         <div class="producto">
             <div class="imagenproducto">
-                <img src="{{url_for('static', filename='imgDetalleP/audifonos.jpg')}}" alt="producto" width= 600px height=500px >
+                {% if post.image_name %}
+                <img src="{{ url_for('media_posts', filename=post.image_name) }}" alt="producto" width= 600px height=500px >
+                {% endif %}
             </div>
             <div class="imagendetallada">
                 <img src="{{url_for('static', filename='imgDetalleP/imgdetalla1.jpg')}}" alt="">

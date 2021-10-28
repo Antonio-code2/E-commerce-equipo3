@@ -14,7 +14,7 @@
                     <img src=" {{ url_for('static', filename='imagenes/user-solid.svg')}}" alt="">
                    
                 </div>
-                <h2>{{ current_user.name }}</h2>
+                <h2>{{ current_user.nombre }}</h2>
                 <div class="nav_user_btn">
                     <ul class="navi">
                         <li><a href="{{ url_for('public.index') }}" class="nav-item">Ver tienda</a></li>
@@ -28,7 +28,7 @@
         <div class="main_user">
 
             <div class="user_welcome">
-                <h1>Hola, {{ current_user.name }} estas en tu lista de deseos</h1>
+                <h1>Hola, {{ current_user.nombre }} estas en tu lista de deseos</h1>
             </div>
             <div class="container-table-user">
                <table class="table">

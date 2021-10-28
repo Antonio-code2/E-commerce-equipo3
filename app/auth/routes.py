@@ -39,7 +39,7 @@ def show_signup_form():
                 next_page = url_for('public.index')
             return redirect(next_page)
     title = "crea una cuenta"
-    return render_template('auth/registro.html', title=title, form=form)
+    return render_template('auth/registro.html', title=title, form=form, error=error)
 
 
 @login_manager.user_loader

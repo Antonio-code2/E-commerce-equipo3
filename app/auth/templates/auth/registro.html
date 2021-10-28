@@ -31,9 +31,9 @@
                     <form action="" method="post" class="form" novalidate>
                         {{ form.hidden_tag() }}
                         <div class="form_inp">
-                                {{ form.name.label }}
-                                {{ form.name}}<br>
-                                {% for error in form.name.errors %}
+                                {{ form.nombre.label }}
+                                {{ form.nombre}}<br>
+                                {% for error in form.nombre.errors %}
                                 <span style="color: red;">{{ error }}</span>
                                 {% endfor %}
                             

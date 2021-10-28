@@ -30,11 +30,13 @@
 {% for post in posts %}
         <div class="contenedor"> 
             <div class= "ImagenProducto">
-             <a href="/producto"><img src="{{url_for('static', filename='img/audifonos.jpg')}}" ></a>
+              {% if post.image_name %}
+             <a href=""> <img src="{{ url_for('media_posts', filename=post.image_name) }}" alt="producto" width= 600px height=500px ></a>
+             {% endif %}
             </div>
               <div class="card-body">
               <div class="productoTitulo">
-                <a href="{{ post.public_url() }}">
+                <a href="{{ url_for('public.post_view', slug=post.title_slug) }}">
                   <h5 class="card-title">{{ post.title }}</h5>
                 </a>
                 <p class="card-text">{{ post.precio }}</p>
@@ -42,7 +44,7 @@
 
               <div class="entradasContenedor">
                 <div class="info">
-                  <a href="{{ post.public_url() }}" class="card-link">Ver Más</a>
+                  <a href="{{ url_for('public.post_view', slug=post.title_slug) }}" class="card-link">Ver Más</a>
                 </div>
                 <div class="link-icon"> 
                   <a href="#" class="card-link"><i class="far fa-heart"></i></a>

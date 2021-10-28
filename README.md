@@ -31,3 +31,23 @@ LIBRERIAS
 -flask-wtf
 -slugify
 -email-validator
+
+
+
+/////////////////////////////////////////////////////////
+E-COMMERCE GRUPO 3 VERSION 1.0.4
+
+ULTIMAS ACTUALIZACIONES AGREDAS A LA PLATAFORMA
+
+-CRUD de usuarios
+-CRUD de productos
+-Actualizacion de la base de datos
+-subida de imagenes (en pruebas)
+-seguridad en las vistas
+-usuarios administrador
+-ahora un administrador puede asignarle a un usuario el rol de administrador
+-el administrador se crea en la consola de la base de datos (lo crea el super administrador)
+-el administrador se logea por el login normalmente pero con los datos que el super administrador les da
+-correo electronico que se envia cuando el usuario se registra
+-parametros de configuaracion agregados, ahora todo el tema de configuracion lo podran encontrar en la carpeta de config
+-como siempre dejo la carpeta lib por si se me olvida decirles que instale un nuevo paquete, recuerden remplazarlos por la carpeta lib que se les crea en su entorno

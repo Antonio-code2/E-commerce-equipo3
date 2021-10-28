@@ -36,20 +36,22 @@
             </div>
             <div class="nav-sign">
                 <a href="{{ url_for('public.index') }}">Inicio</a>
+
                 {%  if current_user.is_anonymous %}
                 <a href="{{ url_for('auth.show_signup_form') }}">Registrarte</a>
                 <a href="{{ url_for('auth.login') }}"><i class="fas fa-user"></i>Login</a>
-               
-                {% if current_user.is_admin %}
-                <a href="{{ url_for('admin.post_form') }}">Administracion</a>
-                {% endif %}
-
-                {% else %}
-                <a href="{{ url_for('admin.post_form') }}">Administracion</a>
+                {% if current_user.is_authenticated %}
                 <a href="{{ url_for('auth.logout') }}">Logout</a>
                 <a href=""><i class="fas fa-cart-plus"></i></a>
-                <a href="{{ url_for('auth.view_user') }}"><i class="fas fa-user"></i> {{ current_user.name }}</a>
-                
+                <a href="{{ url_for('auth.view_user') }}"><i class="fas fa-user"></i> {{ current_user.nombre }}</a>
+                {% endif %}
+                {% else %}
+                {% if current_user.id_admin %}
+               
+                <a href="{{ url_for('auth.logout') }}">Logout</a>
+                <a href="{{ url_for('admin.user_admin') }}"><i class="fas fa-user"></i> {{ current_user.nombre }}</a>
+                {% endif %}
+              
                 {% endif %}
             </div>
            
