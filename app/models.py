@@ -49,9 +49,9 @@ class productos(db.Model):
     def get_by_slug(slug):
         return productos.query.filter_by(title_slug=slug).first()
 
-    #@staticmethod
-    #def get_all():
-    #   return productos.query.all() 
+    @staticmethod
+    def get_all():
+       return productos.query.all() 
 
     # @staticmethod
     # def all_paginated(page=1, per_page=20):
