@@ -11,6 +11,7 @@ class PostForm(FlaskForm):
     precio = StringField('precio')
     post_image = FileField('imagen de cabecera', validators=[FileAllowed(['jpg', 'png'], 'solo se permiten imagenes')])
     descripcion = TextAreaField('Descripcion del producto')
+    image_name = StringField('image_name')
     submit = SubmitField('enviar')
 
 

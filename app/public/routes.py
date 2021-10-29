@@ -6,7 +6,8 @@ from . import public_bp
 
 @public_bp.route('/')
 def index():  # acciones => reg
-    posts = productos.get_all()
+    posts = productos.query.all()
+    print("consulta: ", posts)
     return render_template("public/index.html", posts=posts)
 
 

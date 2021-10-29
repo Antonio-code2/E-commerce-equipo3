@@ -2,16 +2,19 @@ from os import error
 from flask import url_for
 from slugify import slugify
 from sqlalchemy.exc import IntegrityError
+from flask_sqlalchemy import SQLAlchemy
 
 from app import db
 
 class productos(db.Model):
+    __tablename__ = 'productos'
     id_producto = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('Usuarios.id', ondelete='CASCADE'), nullable=False)
     title = db.Column(db.String(256), nullable=False)
     precio = db.Column(db.String, nullable=False)
     title_slug = db.Column(db.String(256), unique=True, nullable=False)
     descripcion = db.Column(db.Text)
+    image_name = db.Column(db.String, nullable=False)
 
     def __repr__(self):
         return f'<productos {self.title}>'
@@ -46,13 +49,14 @@ class productos(db.Model):
     def get_by_slug(slug):
         return productos.query.filter_by(title_slug=slug).first()
 
-    @staticmethod
-    def get_all():
-        return productos.query.all()
+    #@staticmethod
+    #def get_all():
+    #   return productos.query.all() 
 
     # @staticmethod
     # def all_paginated(page=1, per_page=20):
     #     return productos.query.order_by(productos.created.asc()).\
     #     paginate(page=page, per_page=per_page, error_out=False)
 
+        
         

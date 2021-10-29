@@ -41,20 +41,19 @@ def post_form():
         precio = form.precio.data
         descripcion = form.descripcion.data
         file = form.post_image.data
-        image_name = None
+        image_name = form.image_name.data
         # comprueba si la peticion contiene la parte el fichero
-        if file:
-            image_name = secure_filename(file.filename)
-            images_dir = current_app.config['POSTS_IMAGES_DIR']
+        #if file:
+         #   image_name = secure_filename(file.filename)
+          #  images_dir = current_app.config['POSTS_IMAGES_DIR']
             #fase de pruebas para subir imagenes, si quieren probar pueden borrar la linea de arriba y descomentar las dos de abajo
             
             # upload_media = "./static/posts"
             # images_dir = current_app.config['UPLOAD_MEDIA'] = upload_media
-            os.makedirs(images_dir, exist_ok=True)
-            file_path = os.path.join(images_dir, image_name)
-            file.save(file_path)
-        post = productos(user_id=current_user.id, title=title, precio=precio, descripcion=descripcion)
-        post.image_name=image_name
+           # os.makedirs(images_dir, exist_ok=True)
+            #file_path = os.path.join(images_dir, image_name)
+            #file.save(file_path)
+        post = productos(user_id=current_user.id, title=title, precio=precio, descripcion=descripcion, image_name=image_name)
         post.save()
         return redirect(url_for('admin.list_posts'))
 

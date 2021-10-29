@@ -43,6 +43,13 @@
             <span style="color: red;">{{ error }}</span>
             {% endfor %}
         </div>
+        <div class="form_input">
+            {{ form.image_name.label }}
+            {{ form.image_name }}<br>
+            {% for error in form.image_name.errors %}
+            <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </div>
         <div class="btn">
             {{ form.submit() }}
         </div>
