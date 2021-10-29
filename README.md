@@ -1,6 +1,6 @@
 E-COMMERCE GRUPO 3 VERSION 1.0.3
 
-ULTIMAS ACTUALIZACIONES AGREDAS A LA PLATAFORMA
+ULTIMAS ACTUALIZACIONES AGREGADAS A LA PLATAFORMA
 
 1. Nueva estrutrua del proyecto, mas legibilidad, dividida en modulos para mayor entendimiento (admin = ficheros, archivos, templates, funciones y metodos para la administracion), (auth = para administrar la parte de los usuarios), (public = para administrar la parte de las rutas publicas y los archivos publicos)
 
@@ -15,7 +15,7 @@ ULTIMAS ACTUALIZACIONES AGREDAS A LA PLATAFORMA
 6. configuraciones
 
 DEPENDENDENCIAS
--entorno virtual (virtualenv )
+-entorno virtual (virtualenv)
 -flask
 
 COMO MANEJAR DE FORMA CORRECTA EL PROYECTO EN SUS ORDENADORES
